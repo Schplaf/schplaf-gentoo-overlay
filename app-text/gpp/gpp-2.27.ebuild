@@ -9,7 +9,7 @@ DESCRIPTION="General-purpose preprocessor with customizable syntax"
 HOMEPAGE="https://logological.org/gpp"
 SRC_URI="https://github.com/logological/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="LGPLv3"
+LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
