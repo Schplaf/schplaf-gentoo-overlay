@@ -26,6 +26,8 @@ KEYWORDS="~amd64"
 #RDEPEND="${DEPEND}"
 #BDEPEND=""
 
+IUSE="bash-completion"
+
 DOCS=( README.md CHANGELOG )
 
 src_install() {
@@ -33,4 +35,8 @@ src_install() {
 	doexe "${PN}"
 	doman "${PN}.1"
 	dodoc ${DOCS}
+	if use bash-completion
+	then
+	newbashcomp auto-completion/bash/${PN}-completion.bash ${PN}
+	fi
 }
