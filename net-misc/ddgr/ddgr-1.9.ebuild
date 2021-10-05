@@ -21,7 +21,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="bash-completion"
+IUSE="bash-completion zsh-completion fish-completion"
 
 DOCS=( README.md CHANGELOG )
 
@@ -32,6 +32,16 @@ src_install() {
 	dodoc ${DOCS}
 	if use bash-completion
 	then
-	newbashcomp auto-completion/bash/${PN}-completion.bash ${PN}
+		newbashcomp auto-completion/bash/${PN}-completion.bash ${PN}
+	fi
+	if use zsh-completion
+	then
+		insinto /usr/share/zsh/site-functions/
+		newins auto-completion/zsh/${PN} _${PN}
+	fi
+	if use fish-completion
+	then
+		insinto /usr/share/fish/vendor_completions.d/
+		newins auto-completion/fish/${PN}.fish ${PN}.fish 
 	fi
 }
