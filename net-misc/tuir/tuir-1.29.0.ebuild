@@ -25,6 +25,6 @@ RDEPEND="
 	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]
 "
-#src_prepare() {
-#	distutils-r1_src_prepare
-#}
+BDEPEND="test? ( dev-python/vcrpy )"
+
+distutils_enable_tests pytest
