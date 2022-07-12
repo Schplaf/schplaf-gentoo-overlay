@@ -1,0 +1,20 @@
+--- a/Makefile	2022-07-12 11:48:18.488263029 +0200
++++ b/Makefile	2022-07-12 12:07:25.885165083 +0200
+@@ -1,14 +1,14 @@
+ CC      ?= cc
+-PREFIX  ?= /usr/local
++PREFIX  ?= /usr
+ NAME    ?= find-cursor
+ 
+ CFLAGS  += -std=c99 -pedantic -Wall -Wextra -Wpedantic -Os
+-LDFLAGS += -L/usr/lib -lX11 -lXext -lXfixes
++LIBS    += -lX11 -lXext -lXfixes
+ 
+ .PHONY: all clean install uninstall
+ 
+ all:
+-	${CC} ${CFLAGS} ${LDFLAGS} -o ${NAME} *.c
++	${CC} ${CFLAGS} ${LDFLAGS} -o ${NAME} *.c ${LIBS}
+ 
+ clean:
+ 	rm -f ${NAME}
