@@ -1,4 +1,4 @@
-slash's personal overlay
+EADME.md
 
 Package list:
 * app-text/colorpedia        - [1.2.3]  -- General-purpose preprocessor with customizable syntax
@@ -8,6 +8,7 @@ Package list:
 * dev-python/pyexcel-ezodf   - [0.3.4]  -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/fire            - [0.4.0]  -- Library for automatically generating CLIs with a single line of code
 * dev-python/kitchen         - [1.2.5]  -- Useful snippets of code that everybody ends up writing for their projects
+* media-fonts/square         - [1.0]    -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn     - [1.0.1]  -- Implementation of the S3 Texture Compression
 * net-misc/ddgr              - [1.9]    -- A command line utility to search DuckDuckGo from the terminal
 * net-misc/tuir              - [1.29.0] -- A terminal user interface (TUI) for Reddit
