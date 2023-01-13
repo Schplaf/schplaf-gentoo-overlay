@@ -1,4 +1,4 @@
-EADME.md
+slash's personal overlay
 
 Package list:
 * app-text/colorpedia        - [1.2.3]  -- General-purpose preprocessor with customizable syntax
