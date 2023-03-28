@@ -20,7 +20,7 @@ DEPEND="
 	dev-python/rich
 	>=dev-python/textual-0.16.0
 	>=dev-python/appdirs-1.4.4
-	>=dev-python/markdownify-0.11.6
+	>=dev-python/python-markdownify-0.11.6
 	>=dev-python/peewee-3.16.0
 	>=dev-python/fuzzywuzzy-0.18.0
 	"
