@@ -10,7 +10,7 @@ Package list:
 * dev-python/pyexcel-ezodf      - [0.3.4]      -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/python-markdownify - [0.11.6]     -- Library to convert HTML to Markdown 
 * dev-python/fire               - [0.4.0]      -- Library for automatically generating CLIs with a single line of code
-* dev-python/kitchen            - [1.2.5]      -- Useful snippets of code that everybody ends up writing for their projects
+* dev-python/kitchen            - [1.2.6-r1]   -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/textual            - [0.18.0]     -- Python framework to build sophisticated UI
 * media-fonts/square            - [1.0]        -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]      -- Implementation of the S3 Texture Compression
