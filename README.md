@@ -7,7 +7,7 @@ Package list:
 * app-text/ods2md               - [9999]       -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/gpp                  - [2.27]       -- Command-line tool for looking up colors, shades and palettes
 * app-text/zaread               - [9999]       -- A (very) lightweight MS Office files reader
-* dev-python/pyexcel-ezodf      - [0.3.4]      -- Library to manipulate OpenDocument files (pyexcel version)
+* dev-python/pyexcel-ezodf      - [0.3.4-r1]   -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/python-markdownify - [0.11.6]     -- Library to convert HTML to Markdown 
 * dev-python/fire               - [0.4.0]      -- Library for automatically generating CLIs with a single line of code
 * dev-python/kitchen            - [1.2.6-r1]   -- Useful snippets of code that everybody ends up writing for their projects
