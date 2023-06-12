@@ -3,7 +3,7 @@ slash's personal overlay
 Package list:
 * app-text/baca                 - [0.1.14]     -- A TUI Ebook Reader
 * app-text/epy                  - [2022.12.11] -- A fork of epr, a CLI Ebook Reader
-* app-text/colorpedia           - [1.2.3]      -- General-purpose preprocessor with customizable syntax
+* app-text/colorpedia           - [1.2.3-r3]   -- General-purpose preprocessor with customizable syntax
 * app-text/ods2md               - [9999]       -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/gpp                  - [2.27]       -- Command-line tool for looking up colors, shades and palettes
 * app-text/zaread               - [9999]       -- A (very) lightweight MS Office files reader
