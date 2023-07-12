@@ -12,6 +12,7 @@ Package list:
 * dev-python/fire               - [0.5.0]      -- Library for automatically generating CLIs with a single line of code
 * dev-python/kitchen            - [1.2.6-r1]   -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]   -- Library to manipulate OpenDocument files (pyexcel version)
+* dev-python/pykdtree           - [1.3.7_p0]   -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-markdownify - [0.11.6]     -- Library to convert HTML to Markdown 
 * dev-python/textual            - [0.29.0]     -- Python framework to build sophisticated UI
 * media-fonts/square            - [1.0]        -- A TTF font designed to make characters fill a square space
