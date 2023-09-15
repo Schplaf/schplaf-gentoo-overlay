@@ -14,7 +14,7 @@ Package list:
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]   -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree           - [1.3.7_p0]   -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-markdownify - [0.11.6]     -- Library to convert HTML to Markdown 
-* dev-python/textual            - [0.36.0]     -- Python framework to build sophisticated UI
+* dev-python/textual            - [0.37.0]     -- Python framework to build sophisticated UI
 * games-strategy/unciv-bin      - [4.8.5]      -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]        -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]      -- Implementation of the S3 Texture Compression
