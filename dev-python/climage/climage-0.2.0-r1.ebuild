@@ -26,6 +26,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/pillow
+	dev-python/pykdtree
 "
 BDEPEND=""
 
