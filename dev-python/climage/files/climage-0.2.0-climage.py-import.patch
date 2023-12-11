@@ -1,0 +1,9 @@
+--- a/climage/climage.py	2023-10-25 11:48:01.099991735 +0200
++++ b/climage/climage.py	2023-10-25 11:49:24.810141074 +0200
+@@ -1,5 +1,5 @@
+ from io import StringIO
+-import kdtree
++import pykdtree
+ import functools
+ 
+ 

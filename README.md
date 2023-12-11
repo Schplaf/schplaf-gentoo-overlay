@@ -8,7 +8,7 @@ Package list:
 * app-text/gpp                  - [2.27]       -- Command-line tool for looking up colors, shades and palettes
 * app-text/zaread               - [9999]       -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex             - [1.10.0-r3]  -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
-* dev-python/climage            - [0.2.0-r1]   -- Tool that converts images to beautiful ANSI escape codes for display in CLI
+* dev-python/climage            - [0.2.0-r2]   -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.5.0]      -- Library for automatically generating CLIs with a single line of code
 * dev-python/kitchen            - [1.2.6-r1]   -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]   -- Library to manipulate OpenDocument files (pyexcel version)
