@@ -1,0 +1,22 @@
+--- a/src/baca/components/contents.py	2023-06-08 11:46:28.000000000 +0200
++++ b/src/baca/components/contents.py	2023-12-14 15:31:01.693092213 +0100
+@@ -89,7 +89,7 @@
+             # NOTE: -1 for precaution on rounding of screen width
+             oWidth=self.size.width - 1,
+             is_unicode=True,
+-            color_type=climage._color_types.truecolor,
++            color_type=climage.color_types.truecolor,
+             palette="default",
+         )
+         img.close()
+--- a/pyproject.toml	2023-06-08 11:46:28.000000000 +0200
++++ b/pyproject.toml	2023-12-14 15:31:01.693092213 +0100
+@@ -20,7 +20,7 @@
+ appdirs = "^1.4.4"
+ peewee = "^3.16.0"
+ fuzzywuzzy = "^0.18.0"
+-climage = "^0.1.3"
++climage = "^0.2.0"
+ 
+ [tool.poetry.group.dev.dependencies]
+ black = "^23.1.0"

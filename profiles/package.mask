@@ -1,0 +1,3 @@
+# Jean-Christophe Bach <jc.bach@imt-atlantique.fr> (2023-12-14)
+# live ebuild
+>=app-text/baca-9999
