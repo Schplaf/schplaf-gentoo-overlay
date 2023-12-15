@@ -20,6 +20,7 @@ Package list:
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
 * net-misc/ddgr                 - [2.1]              -- A command line utility to search DuckDuckGo from the terminal
 * net-misc/tuir                 - [1.29.0-r1]        -- A terminal user interface (TUI) for Reddit
+* net-p2p/bob-bin               - [9999]             -- B·o·B, an universal & secure peer-to-peer file-transfer (binary version)
 * sys-process/btop              - [1.2.8]            -- A complete monitor of machine resources
 * x11-misc/find-cursor          - [1.8]              -- Simple XLib program to highlight the cursor position
 * x11-plugins/purple-discord    - [9999]             -- A libpurple/Pidgin plugin for Discord
