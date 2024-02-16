@@ -10,12 +10,13 @@ Package list:
 * app-vim/vim-latex             - [1.10.0-r3]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/climage            - [0.2.0-r2]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.5.0]            -- Library for automatically generating CLIs with a single line of code
+* dev-python/isbnlib            - [3.10.14]          -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen            - [1.2.6-r1]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree           - [1.3.10]           -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-markdownify - [0.11.6]           -- Library to convert HTML to Markdown 
 * dev-python/textual            - [0.38.1]           -- Python framework to build sophisticated UI
-* games-strategy/unciv-bin      - [4.10.9]           -- Civ V remake for Android & Desktop
+* games-strategy/unciv-bin      - [4.10.6]           -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
 * net-misc/ddgr                 - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
