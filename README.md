@@ -10,6 +10,7 @@ Package list:
 * app-vim/vim-latex             - [1.10.0-r3]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/climage            - [0.2.0-r2]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.5.0]            -- Library for automatically generating CLIs with a single line of code
+* dev-python/habanero           - [1.2.6]            -- Low level client for Crossref search API
 * dev-python/isbnlib            - [3.10.14]          -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen            - [1.2.6-r1]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]         -- Library to manipulate OpenDocument files (pyexcel version)
