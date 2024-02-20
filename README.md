@@ -2,10 +2,11 @@ slash's personal overlay
 
 Package list:
 * app-text/baca                 - [0.1.16-r4 & 9999] -- A TUI Ebook Reader
-* app-text/epy                  - [2022.12.11]       -- A fork of epr, a CLI Ebook Reader
 * app-text/colorpedia           - [1.2.3-r3]         -- General-purpose preprocessor with customizable syntax
-* app-text/ods2md               - [9999-r1]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
+* app-text/epy                  - [2022.12.11]       -- A fork of epr, a CLI Ebook Reader
 * app-text/gpp                  - [2.27]             -- Command-line tool for looking up colors, shades and palettes
+* app-text/ods2md               - [9999-r1]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
+* app-text/papis                - [0.13]             -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/zaread               - [9999]             -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex             - [1.10.0-r3]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/arxiv2bib          - [1.0.8]            -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
