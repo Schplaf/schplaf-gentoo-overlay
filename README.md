@@ -6,7 +6,7 @@ Package list:
 * app-text/epy                  - [2022.12.11]       -- A fork of epr, a CLI Ebook Reader
 * app-text/gpp                  - [2.27]             -- Command-line tool for looking up colors, shades and palettes
 * app-text/ods2md               - [9999-r1]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
-* app-text/papis                - [0.13]             -- A powerful and highly extensible CLI document and bibliography manager
+* app-text/papis                - [0.13-r1]          -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/zaread               - [9999]             -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex             - [1.10.0-r3]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/arxiv2bib          - [1.0.8]            -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
