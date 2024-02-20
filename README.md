@@ -15,6 +15,7 @@ Package list:
 * dev-python/habanero           - [1.2.6]            -- Low level client for Crossref search API
 * dev-python/isbnlib            - [3.10.14]          -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen            - [1.2.6-r1]         -- Useful snippets of code that everybody ends up writing for their projects
+* dev-python/papis-rofi         - [0.2.0]            -- Papis GUI using Rofi
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree           - [1.3.11]           -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi         - [0.2]              -- Python package to work with Document Object Identifier (doi)
