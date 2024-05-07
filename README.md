@@ -22,7 +22,7 @@ Package list:
 * dev-python/python-doi         - [0.2]              -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify - [0.11.6]           -- Library to convert HTML to Markdown 
 * dev-python/textual            - [0.38.1]           -- Python framework to build sophisticated UI
-* games-strategy/unciv-bin      - [4.11.5]           -- Civ V remake for Android & Desktop
+* games-strategy/unciv-bin      - [4.11.10]          -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
 * net-misc/ddgr                 - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
