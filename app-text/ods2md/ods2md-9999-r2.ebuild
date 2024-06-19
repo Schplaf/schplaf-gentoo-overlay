@@ -22,12 +22,6 @@ BDEPEND=""
 
 DOCS=( README.md )
 
-#This functin has been written to avoid portage to try to open setup.py (which
-#does not exist in this #project). Is there any way to avoid such function?
-src_compile() {
-	true
-}
-
 src_install() {
 	exeinto "/usr/bin"
 	newexe ${PN}.py ${PN}
