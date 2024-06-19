@@ -2,10 +2,10 @@ slash's personal overlay
 
 Package list:
 * app-text/baca                 - [0.1.16-r4 & 9999] -- A TUI Ebook Reader
-* app-text/colorpedia           - [1.2.3-r3]         -- General-purpose preprocessor with customizable syntax
+* app-text/colorpedia           - [1.2.3-r3]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical             - [9999]             -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/epy                  - [2022.12.11]       -- A fork of epr, a CLI Ebook Reader
-* app-text/gpp                  - [2.27]             -- Command-line tool for looking up colors, shades and palettes
+* app-text/gpp                  - [2.27]             -- General-purpose preprocessor with customizable syntax
 * app-text/ods2md               - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                - [0.13-r1]          -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/zaread               - [9999]             -- A (very) lightweight MS Office files reader
