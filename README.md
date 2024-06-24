@@ -9,7 +9,7 @@ Package list:
 * app-text/ods2md               - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                - [0.13-r1]          -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/zaread               - [9999]             -- A (very) lightweight MS Office files reader
-* app-vim/vim-latex             - [1.10.0-r3]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
+* app-vim/vim-latex             - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/arxiv2bib          - [1.0.8]            -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
 * dev-python/climage            - [0.2.0-r2]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.5.0]            -- Library for automatically generating CLIs with a single line of code
