@@ -5,17 +5,24 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
 PYTHON_COMPAT=( python3_{10..13} )
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="A TUI Ebook Reader"
 HOMEPAGE="https://github.com/wustho/baca"
-EGIT_REPO_URI="https://github.com/wustho/baca"
+
+if [[ "${PV}" == *9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/wustho/baca"
+	#will remove this when baca will bump the tag/version name
+else
+	SRC_URI="https://github.com/wustho/baca/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+fi
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
+DEPEND="${DEPEND}
 	>=dev-python/beautifulsoup4-4.12.0
 	dev-python/rich
 	>=dev-python/textual-0.16.0
@@ -31,6 +38,11 @@ BDEPEND=""
 DOCS=( README.md LICENSE )
 
 distutils_enable_tests pytest
+
+#src_prepare() {
+#	eapply "${FILESDIR}"/baca-0.1.16_with_CLImage-0.2.0.patch
+#	eapply_user
+#}
 
 src_install() {
 	distutils-r1_src_install
