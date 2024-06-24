@@ -18,12 +18,7 @@ if [[ "${PV}" == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/joowani/colorpedia"
 else
-	#SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 	SRC_URI="$(pypi_sdist_url "${PN^}" "${PV}")"
-	#SRC_URI="$(pypi_sdist_url --no-normalize "${PN^}")"
-	#"$(pypi_sdist_url) -> ${P}.tar.gz"
-	#SRC_URI="https://pypi.org/project/colorpedia/${PV}/"
-	#SRC_URI="https://github.com/joowani/colorpedia/archive/refs/tags/${PV}.tar.gz"
 fi
 
 RDEPEND="
