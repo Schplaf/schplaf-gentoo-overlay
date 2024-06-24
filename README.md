@@ -15,7 +15,7 @@ Package list:
 * dev-python/fire               - [0.5.0]            -- Library for automatically generating CLIs with a single line of code
 * dev-python/habanero           - [1.2.6]            -- Low level client for Crossref search API
 * dev-python/isbnlib            - [3.10.14]          -- A library to validate, clean, transform and get metadata for ISBN strings
-* dev-python/kitchen            - [1.2.6-r1]         -- Useful snippets of code that everybody ends up writing for their projects
+* dev-python/kitchen            - [1.2.6-r2]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/papis-python-rofi  - [1.0.2]            -- Python module to create simple GUIs with Rofi (fork for papis)
 * dev-python/papis-rofi         - [0.2.0-r1]         -- Papis GUI using Rofi
 * dev-python/pyexcel-ezodf      - [0.3.4-r1]         -- Library to manipulate OpenDocument files (pyexcel version)
