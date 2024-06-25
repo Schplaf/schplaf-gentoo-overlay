@@ -1,0 +1,22 @@
+--- a/tuir/config.py	2024-06-25 11:09:03.587702247 +0200
++++ b/tuit/config.py	2024-06-25 11:43:03.826798382 +0200
+@@ -2,6 +2,7 @@
+ from __future__ import unicode_literals
+ 
+ import os
++import sys
+ import codecs
+ import shutil
+ import argparse
+@@ -131,7 +132,10 @@
+         config = configparser.RawConfigParser()
+         if os.path.exists(filename):
+             with codecs.open(filename, encoding='utf-8') as fp:
+-                config.readfp(fp)
++                if sys.version_info.major >= 3:
++                    config.read_file(fp)
++                else:
++                    config.readfp(fp)
+ 
+         return cls._parse_tuir_file(config)
+ 
