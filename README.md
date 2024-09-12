@@ -1,6 +1,7 @@
 slash's personal overlay
 
 Package list:
+* app-benchmarks/load-time      - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-text/baca                 - [0.1.17 & 9999]    -- A TUI Ebook Reader
 * app-text/colorpedia           - [1.2.3-r4]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical             - [9999]             -- Converts a CSV file with event information to an iCalendar ICS file
