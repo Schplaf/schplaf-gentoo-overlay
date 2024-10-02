@@ -3,6 +3,7 @@
 
 EAPI=7
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10..13} )
 inherit distutils-r1
 
@@ -10,7 +11,7 @@ MY_PN=python-${PN}
 MY_P=${MY_PN}-${PV}
 S=${WORKDIR}/${MY_P}
 
-DESCRIPTION="Library for automatically generating CLIs with a single line of code"
+DESCRIPTION="Library for automatically generating CLIs from any Python object"
 HOMEPAGE="
 	https://github.com/google/python-fire
 	https://pypi.org/project/fire/"
@@ -27,10 +28,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="dev-python/termcolor[${PYTHON_USEDEP}]"
+BDEPEND="test? (
+	dev-python/hypothesis[${PYTHON_USEDEP}]
+	dev-python/Levenshtein[${PYTHON_USEDEP}]
+)"
 
-DOCS=( README.md LICENSE CONTRIBUTING.md docs/ )
+DOCS=( CONTRIBUTING.md LICENSE MANIFEST.in README.md docs/ )
 
 distutils_enable_tests setup.py
 
