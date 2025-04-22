@@ -1,6 +1,7 @@
 slash's personal overlay
 
 Package list:
+* app-admin/pass-import         - [3.5]              -- A pass extension for importing data from most existing password managers
 * app-benchmarks/load-time      - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-misc/isbntools            - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-text/baca                 - [0.1.17 & 9999]    -- A TUI Ebook Reader
