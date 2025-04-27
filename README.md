@@ -18,7 +18,7 @@ Package list:
 * dev-python/climage            - [0.2.0-r2]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.7.0]            -- Library for automatically generating CLIs with a single line of code
 * dev-python/habanero           - [2.2.0-r1]         -- Low level client for Crossref search API
-* dev-python/isbnlib            - [3.10.14]          -- A library to validate, clean, transform and get metadata for ISBN strings
+* dev-python/isbnlib            - [3.10.14-r1]       -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen            - [1.2.6-r2]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/papis-python-rofi  - [1.0.2]            -- Python module to create simple GUIs with Rofi (fork for papis)
 * dev-python/papis-rofi         - [0.2.0-r1]         -- Papis GUI using Rofi
