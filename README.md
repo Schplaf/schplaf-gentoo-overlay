@@ -9,7 +9,7 @@ Package list:
 * app-text/csv2ical             - [9999]             -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/epy                  - [2022.12.11-r1]    -- A fork of epr, a CLI Ebook Reader
 * app-text/gpp                  - [2.28]             -- General-purpose preprocessor with customizable syntax
-* app-text/objcurses            - [1.1.4 & 9999]     -- Minimalistic 3D object viewer running the terminal
+* app-text/objcurses            - [2.0.0 & 9999]     -- Minimalistic 3D object viewer running the terminal
 * app-text/ods2md               - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                - [0.13-r1]          -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/urlscan              - [1.0.6]            -- Mutt and terminal url selector (similar to urlview)
