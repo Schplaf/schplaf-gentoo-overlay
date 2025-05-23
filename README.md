@@ -24,7 +24,7 @@ Package list:
 * dev-python/papis-python-rofi  - [1.0.2]            -- Python module to create simple GUIs with Rofi (fork for papis)
 * dev-python/papis-rofi         - [0.2.0-r1]         -- Papis GUI using Rofi
 * dev-python/pyexcel-ezodf      - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
-* dev-python/pykdtree           - [1.4.0]            -- Fast kd-tree implementation with OpenMP-enabled queries
+* dev-python/pykdtree           - [1.4.1]            -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi         - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify - [0.12.1]           -- Library to convert HTML to Markdown 
 * dev-python/textual            - [0.38.1]           -- Python framework to build sophisticated UI
