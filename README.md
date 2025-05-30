@@ -16,7 +16,7 @@ Package list:
 * app-text/zaread               - [9999]             -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex             - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated]
 * dev-python/arxiv2bib          - [1.0.8-r1]         -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
-* dev-python/climage            - [0.2.0-r2]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
+* dev-python/climage            - [0.2.0-r4]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/fire               - [0.7.0]            -- Library for automatically generating CLIs with a single line of code
 * dev-python/habanero           - [2.2.0-r1]         -- Low level client for Crossref search API
 * dev-python/isbnlib            - [3.10.14-r1]       -- A library to validate, clean, transform and get metadata for ISBN strings
