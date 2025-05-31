@@ -29,7 +29,7 @@ Package list:
 * dev-python/python-markdownify - [0.12.1]           -- Library to convert HTML to Markdown 
 * dev-python/textual            - [3.2.0]            -- Python framework to build sophisticated UI
 * dev-vcs/gitstats              - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
-* dev-vcs/vcstool               - [0.3.0]            -- Tool designed to make working with multiple repositories easier
+* dev-vcs/vcstool               - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
 * games-strategy/unciv-bin      - [4.16.10]          -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
