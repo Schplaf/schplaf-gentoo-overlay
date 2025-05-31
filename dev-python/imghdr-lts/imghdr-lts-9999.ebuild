@@ -12,7 +12,7 @@ DESCRIPTION="A \"temporary\" solution to compensate for the end of imghdr in Pyt
 HOMEPAGE="https://github.com/mikeshardmind/imghdr-lts"
 EGIT_REPO_URI="https://github.com/mikeshardmind/${PN}.git"
 
-LICENSE="PSFi-2"
+LICENSE="PSF-2"
 SLOT="0"
 KEYWORDS="amd64"
 
