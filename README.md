@@ -27,7 +27,7 @@ Package list:
 * dev-python/pykdtree           - [1.4.1]            -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi         - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify - [0.12.1]           -- Library to convert HTML to Markdown 
-* dev-python/textual            - [0.38.1]           -- Python framework to build sophisticated UI
+* dev-python/textual            - [3.2.0]            -- Python framework to build sophisticated UI
 * dev-vcs/gitstats              - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool               - [0.3.0]            -- Tool designed to make working with multiple repositories easier
 * games-strategy/unciv-bin      - [4.16.10]          -- Civ V remake for Android & Desktop
