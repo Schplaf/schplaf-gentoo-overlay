@@ -1,0 +1,11 @@
+--- a/src/baca/utils/html_parser.py	2025-05-31 15:08:51.279019307 +0200
++++ b/src/baca/utils/html_parser.py	2025-05-31 21:01:07.741967587 +0200
+@@ -8,7 +8,7 @@
+ 
+ 
+ class MarkdownConverter(_MarkdownConverter):
+-    def convert_img(self, el, text, convert_as_inline):
++    def convert_img(self, el, text, parent_tags):
+         return ""
+ 
+ 
