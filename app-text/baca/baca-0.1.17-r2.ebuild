@@ -41,7 +41,7 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	#eapply "${FILESDIR}"/baca-0.1.16_with_CLImage-0.2.0.patch
-	eapply "${FILESDIR}"/baca-0.1.17-r1_with_markdownify-1.patch
+	eapply "${FILESDIR}"/baca-0.1.17-r2_with_markdownify-1.patch
 	eapply_user
 }
 
