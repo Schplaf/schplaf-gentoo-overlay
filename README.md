@@ -22,7 +22,7 @@ Package list:
 * dev-python/imghdr-lts         - [9999]             -- A "temporary" solution to compensate for the end of imghdr in Python3.13
 * dev-python/isbnlib            - [3.10.14-r1]       -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen            - [1.2.6-r3]         -- Useful snippets of code that everybody ends up writing for their projects
-* dev-python/papis-python-rofi  - [1.0.2]            -- Python module to create simple GUIs with Rofi (fork for papis)
+* dev-python/papis-python-rofi  - [1.0.2-r1]         -- Python module to create simple GUIs with Rofi (fork for papis)
 * dev-python/papis-rofi         - [0.2.0-r2]         -- Papis GUI using Rofi
 * dev-python/pyexcel-ezodf      - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree           - [1.4.1]            -- Fast kd-tree implementation with OpenMP-enabled queries
