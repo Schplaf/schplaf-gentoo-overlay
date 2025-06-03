@@ -1,0 +1,10 @@
+--- a/llvm.eselect	2025-03-30 12:42:47.340849590 +0200
++++ b/llvm.eselect	2025-03-30 12:43:09.790957418 +0200
+@@ -160,6 +160,7 @@
+ 	fi
+ 
+ 	update_env "${target}" || die -q "Could not update env file"
++	env-update || die -q "Could not update environment.d and ld.so.conf"
+ }
+ 
+ 
