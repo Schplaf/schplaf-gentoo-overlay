@@ -1,0 +1,20 @@
+--- a/colorpedia/cli.py	2025-06-07 15:55:27.409601030 +0200
++++ b/colorpedia/cli.py	2025-06-07 15:58:14.350500858 +0200
+@@ -5,7 +5,7 @@
+ from typing import Any, Callable, Dict, Iterable, Optional
+ 
+ from fire import Fire
+-from pkg_resources import get_distribution
++from importlib.metadata import version
+ 
+ from colorpedia.color import Color
+ from colorpedia.config import (
+@@ -78,7 +78,7 @@
+     :param json: Display in JSON format.
+     """
+     json = validate_boolean_flag(json)
+-    version = get_distribution("colorpedia").version
++    version = version("colorpedia")
+     print({"version": version} if json else version)
+ 
+ 

@@ -40,6 +40,11 @@ DOCS=( LICENSE docs/README.md docs/CONTRIBUTING.md )
 
 #distutils_enable_tests pytest
 
+src_prepare() {
+	eapply "${FILESDIR}"/${PF}-cli.py-pkg_resources.patch
+	eapply_user
+}
+
 src_install() {
 	distutils-r1_src_install
 }
