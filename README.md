@@ -6,7 +6,7 @@ Package list:
 * app-eselect/eselect-llvm      - [20220206]         -- Manage LLVM versions
 * app-misc/isbntools            - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-text/baca                 - [0.1.17-r3 & 9999] -- A TUI Ebook Reader
-* app-text/colorpedia           - [1.2.3-r4]         -- Command-line tool for looking up colors, shades and palettes
+* app-text/colorpedia           - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical             - [9999]             -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/epy                  - [2022.12.11-r1]    -- A fork of epr, a CLI Ebook Reader
 * app-text/gpp                  - [2.28]             -- General-purpose preprocessor with customizable syntax
