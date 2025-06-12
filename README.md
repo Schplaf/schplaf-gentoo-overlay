@@ -34,7 +34,7 @@ Package list:
 * dev-python/textual            - [3.3.0]            -- Python framework to build sophisticated UI
 * dev-vcs/gitstats              - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool               - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
-* games-strategy/unciv-bin      - [4.16.10]          -- Civ V remake for Android & Desktop
+* games-strategy/unciv-bin      - [4.16.15]          -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
 * net-misc/ddgr                 - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
