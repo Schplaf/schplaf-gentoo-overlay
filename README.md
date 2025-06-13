@@ -4,6 +4,7 @@ Package list:
 * app-admin/pass-import         - [3.5]              -- A pass extension for importing data from most existing password managers
 * app-benchmarks/load-time      - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm      - [20220206]         -- Manage LLVM versions
+* app-misc/glow                 - [2.1.1]            -- Render markdown on the CLI
 * app-misc/isbntools            - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-text/baca                 - [0.1.17-r4 & 9999] -- A TUI Ebook Reader
 * app-text/colorpedia           - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
