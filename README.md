@@ -35,7 +35,7 @@ Package list:
 * dev-python/python-markdownify - [1.1.0]            -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr    - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap   - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
-* dev-python/textual            - [3.3.0]            -- Python framework to build sophisticated UI
+* dev-python/textual            - [3.4.0]            -- Python framework to build sophisticated UI
 * dev-vcs/gitstats              - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool               - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
 * games-strategy/unciv-bin      - [4.16.15]          -- Civ V remake for Android & Desktop
