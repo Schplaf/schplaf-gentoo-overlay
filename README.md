@@ -41,7 +41,7 @@ Package list:
 * games-strategy/unciv-bin      - [4.16.15]          -- Civ V remake for Android & Desktop
 * media-fonts/square            - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn        - [1.0.1]            -- Implementation of the S3 Texture Compression
-* net-dns/owns                  - [0.8]              -- A personal DNS server designed to solve problems associated with VPN use
+* net-dns/owns                  - [0.8.1]            -- A personal DNS server designed to solve problems associated with VPN use
 * net-misc/ddgr                 - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
 * net-misc/tuir                 - [1.29.0-r3]        -- A terminal user interface (TUI) for Reddit
 * net-p2p/bob-bin               - [9999]             -- B·o·B, an universal & secure peer-to-peer file-transfer (binary version)
