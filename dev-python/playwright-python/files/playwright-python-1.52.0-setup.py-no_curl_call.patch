@@ -1,0 +1,12 @@
+--- a/setup.py	2025-04-28 17:43:20.000000000 +0200
++++ b/setup.py	2025-06-19 15:34:08.184922381 +0200
+@@ -111,7 +111,8 @@
+     url = url + zip_file
+     print(f"Fetching {url}")
+     # Don't replace this with urllib - Python won't have certificates to do SSL on all platforms.
+-    subprocess.check_call(["curl", url, "-o", "driver/" + zip_file])
++    # Gentoo packaging: Do not call curl or any other tool to fetch a file during the compile phase
++    # subprocess.check_call(["curl", url, "-o", "driver/" + zip_file])
+ 
+ 
+ class PlaywrightBDistWheelCommand(BDistWheelCommand):
