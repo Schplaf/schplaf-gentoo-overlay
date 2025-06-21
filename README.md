@@ -43,6 +43,7 @@ Package list:
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap          - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/textual                   - [3.5.0]            -- Python framework to build sophisticated UI
+* dev-python/textual-speedups          - [0.2.0]            -- Optional Rust speedups for Textual (dev-python/textual)
 * dev-python/uv-dynamic-versioning     - [0.8.2]            -- Dynamic versioning based on VCS tags for uv/hatch project
 * dev-vcs/gitstats                     - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool                      - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
