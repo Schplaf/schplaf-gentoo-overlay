@@ -15,12 +15,15 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
+IUSE="rust-speedups"
+
 DEPEND="
 	>=dev-python/rich-13.3.3[${PYTHON_USEDEP}]
 	>=dev-python/markdown-it-py-2.1.0[${PYTHON_USEDEP}]
 	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	>=dev-python/platformdirs-3.6.0[${PYTHON_USEDEP}]
 	<dev-python/platformdirs-5[${PYTHON_USEDEP}]
+	rust-speedups? ( dev-python/textual-speedups )
 "
 	#>=dev-python/importlib-metadata-4.11.3[${PYTHON_USEDEP}]
 RDEPEND="${DEPEND}"
