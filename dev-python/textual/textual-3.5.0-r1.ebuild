@@ -23,7 +23,7 @@ DEPEND="
 	>=dev-python/typing-extensions-4.4.0[${PYTHON_USEDEP}]
 	>=dev-python/platformdirs-3.6.0[${PYTHON_USEDEP}]
 	<dev-python/platformdirs-5[${PYTHON_USEDEP}]
-	rust-speedups? ( dev-python/textual-speedups )
+	rust-speedups? ( dev-python/textual-speedups[${PYTHON_USEDEP}] )
 "
 	#>=dev-python/importlib-metadata-4.11.3[${PYTHON_USEDEP}]
 RDEPEND="${DEPEND}"
