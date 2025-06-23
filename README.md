@@ -5,7 +5,7 @@ Package list:
 * app-benchmarks/load-time             - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
 * app-i18n/deepl-cli                   - [2.0.0]            -- DeepL Translator CLI without API Key
-* app-misc/gocost                      - [1.3.1]            -- Simple TUI application to manage monthly expenses
+* app-misc/gocost                      - [1.5.0]            -- Simple TUI application to manage monthly expenses
 * app-misc/glow                        - [2.1.1]            -- Render markdown on the CLI
 * app-misc/isbntools                   - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
