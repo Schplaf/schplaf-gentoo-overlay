@@ -5,10 +5,11 @@ Package list:
 * app-benchmarks/load-time             - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
 * app-i18n/deepl-cli                   - [2.0.0]            -- DeepL Translator CLI without API Key
+* app-misc/gocost                      - [1.3.1]            -- Simple TUI application to manage monthly expenses
 * app-misc/glow                        - [2.1.1]            -- Render markdown on the CLI
+* app-misc/isbntools                   - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
 * app-misc/mechsim                     - [1.1.0]            -- A CLI-Based Mechanical Keyboard Sound Simulator
-* app-misc/isbntools                   - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers... 
 * app-text/baca                        - [0.1.17-r4 & 9999] -- A TUI Ebook Reader
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical                    - [1.0.1]            -- Converts a CSV file with event information to an iCalendar ICS file
@@ -47,7 +48,7 @@ Package list:
 * dev-python/uv-dynamic-versioning     - [0.8.2]            -- Dynamic versioning based on VCS tags for uv/hatch project
 * dev-vcs/gitstats                     - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool                      - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
-* games-strategy/unciv-bin             - [4.16.16]          -- Civ V remake for Android & Desktop
+* games-strategy/unciv-bin             - [4.16.18]          -- Civ V remake for Android & Desktop
 * media-fonts/square                   - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-libs/libtxc_dxtn               - [1.0.1]            -- Implementation of the S3 Texture Compression
 * net-dns/owns                         - [0.8.1]            -- A personal DNS server designed to solve problems associated with VPN use
