@@ -21,6 +21,7 @@ Package list:
 * app-text/urlscan                     - [1.0.6]            -- Mutt and terminal url selector (similar to urlview)
 * app-text/zaread                      - [9999]             -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex                    - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated
+* dev-cpp/tabular                      - [1.0.1]            -- Lightweight, header-only C++ library for creating well-formatted, fully-customizable CLI tables.
 * dev-python/arxiv-py                  - [2.2.0]            -- Python wrapper for the arXiv API
 * dev-python/arxiv2bib                 - [1.0.8-r1]         -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
 * dev-python/climage                   - [0.2.2]            -- Tool that converts images to beautiful ANSI escape codes for display in CLI
