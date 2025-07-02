@@ -18,7 +18,7 @@ Package list:
 * app-text/gpp                         - [2.28]             -- General-purpose preprocessor with customizable syntax
 * app-text/objcurses                   - [2.2.1 & 9999]     -- Minimalistic 3D object viewer running the terminal
 * app-text/ods2md                      - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
-* app-text/papis                       - [0.13-r1]          -- A powerful and highly extensible CLI document and bibliography manager
+* app-text/papis                       - [0.14.1]           -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/urlscan                     - [1.0.6]            -- Mutt and terminal url selector (similar to urlview)
 * app-text/zaread                      - [9999]             -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex                    - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated
