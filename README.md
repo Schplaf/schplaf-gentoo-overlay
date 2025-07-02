@@ -30,6 +30,7 @@ Package list:
 * dev-python/dunamai                   - [1.24.1]           -- Dynamic versioning library and CLI
 * dev-python/eval-type-backport        - [0.2.2]            -- Replacement for typing._eval_type to support newer typing features in older Python versions
 * dev-python/fire                      - [0.7.0-r1]         -- Library for automatically generating CLIs with a single line of code
+* dev-python/gevent                    - [25.5.1]           -- Coroutine-based concurrency library for Python
 * dev-python/habanero                  - [2.3.0]            -- Low level client for Crossref search API
 * dev-python/imghdr-lts                - [9999]             -- A "temporary" solution to compensate for the end of imghdr in Python3.13
 * dev-python/install-playwright-python - [0.1.1]            -- Execute `playwright install` from Python
