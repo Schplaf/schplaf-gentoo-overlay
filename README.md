@@ -57,6 +57,7 @@ Package list:
 * media-fonts/square                   - [1.0]              -- A TTF font designed to make characters fill a square space
 * media-gfx/imgcat                     - [1.0.22]           -- Display images and gifs in your terminal
 * media-libs/libtxc_dxtn               - [1.0.1]            -- Implementation of the S3 Texture Compression
+* media-sound/castero                  - [0.9.5]            -- TUI podcast client for the terminal
 * net-dns/owns                         - [0.8.1]            -- A personal DNS server designed to solve problems associated with VPN use
 * net-misc/ddgr                        - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
 * net-misc/ytsurf                      - [1.0.0]            -- Simple shell script to search for YouTube videos from your terminal
