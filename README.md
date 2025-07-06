@@ -42,7 +42,7 @@ Package list:
 * dev-python/playwright-python         - [1.52.0]           -- Library to automate Chromium, Firefox and WebKit browsers with a single API
 * dev-python/pyee                      - [13.0.0]           -- A rough port of Node.js's EventEmitter to Python with a few tricks of its own
 * dev-python/pyexcel-ezodf             - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
-* dev-python/pykdtree                  - [1.4.1]            -- Fast kd-tree implementation with OpenMP-enabled queries
+* dev-python/pykdtree                  - [1.4.2]            -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify        - [1.1.0]            -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
