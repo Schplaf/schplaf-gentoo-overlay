@@ -44,7 +44,7 @@ Package list:
 * dev-python/pyexcel-ezodf             - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree                  - [1.4.3]            -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
-* dev-python/python-markdownify        - [1.1.0]            -- Library to convert HTML to Markdown
+* dev-python/python-markdownify        - [1.2.0]            -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap          - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/textual                   - [5.3.0]            -- Python framework to build sophisticated UI
