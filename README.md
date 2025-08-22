@@ -29,7 +29,7 @@ Package list:
 * dev-python/citeproc-py               - [0.8.2]            -- A CSL processor for Python which aims to implement the CSL 1.0.1 specification
 * dev-python/dunamai                   - [1.24.1]           -- Dynamic versioning library and CLI
 * dev-python/eval-type-backport        - [0.2.2]            -- Replacement for typing._eval_type to support newer typing features in older Python versions
-* dev-python/fire                      - [0.7.0-r1]         -- Library for automatically generating CLIs with a single line of code
+* dev-python/fire                      - [0.7.1]            -- Library for automatically generating CLIs with a single line of code
 * dev-python/gevent                    - [25.5.1]           -- Coroutine-based concurrency library for Python
 * dev-python/grequests                 - [0.7.0]            -- Use Requests with Gevent to make asynchronous HTTP Requests easily
 * dev-python/habanero                  - [2.3.0]            -- Low level client for Crossref search API
