@@ -11,6 +11,7 @@ Package list:
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
 * app-misc/mechsim                     - [1.1.0]            -- A CLI-Based Mechanical Keyboard Sound Simulator
 * app-misc/nn                          - [9999]             -- A minimalist Bash script to manage your notes
+* app-misc/rustormy                    - [0.3.0]            -- Minimal neofetch-like weather CLI
 * app-text/baca                        - [0.1.17-r4 & 9999] -- A TUI Ebook Reader
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical                    - [1.0.1]            -- Converts a CSV file with event information to an iCalendar ICS file
