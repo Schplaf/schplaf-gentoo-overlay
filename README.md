@@ -50,6 +50,7 @@ Package list:
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap          - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/textual                   - [6.1.0]            -- Python framework to build sophisticated UI
+* dev-python/textual-plotext           - [0.2.1]            -- A Textual widget wrapper library for Plotext
 * dev-python/textual-speedups          - [0.2.0]            -- Optional Rust speedups for Textual (dev-python/textual)
 * dev-python/uv-dynamic-versioning     - [0.8.2]            -- Dynamic versioning based on VCS tags for uv/hatch project
 * dev-python/zope-dottedname           - [6.0]              -- Resolve strings containing dotted names into the appropriate python object
