@@ -58,7 +58,7 @@ src_install() {
 	then
 		mkdir ${D}/usr/share/man/man1/
 		asciidoctor -b manpage -a reproducible -o ${D}/usr/share/man/man1/mdcat.1 mdcat.1.adoc
-	ln -s ${D}/usr/share/man/man1/mdcat.1.bz2 ${D}/usr/share/man/man1/mdless.1.bz2
+		ln -s ${D}/usr/share/man/man1/mdcat.1.bz2 ${D}/usr/share/man/man1/mdless.1.bz2
 	fi
 	#from the README:
 	# "mdcat can be linked or copied to mdless; if invoked as mdless it automatically uses pagination."
