@@ -18,6 +18,7 @@ Package list:
 * app-text/csv2ical                    - [1.0.1]            -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/doxx                        - [0.1.2]            -- Terminal document viewer for .docx files
 * app-text/epy                         - [2022.12.11-r1]    -- A fork of epr, a CLI Ebook Reader
+* app-text/markln                      - [9999 (1.2)]       -- A TUI MarkDown editor with live preview
 * app-text/objcurses                   - [2.2.1 & 9999]     -- Minimalistic 3D object viewer running the terminal
 * app-text/ods2md                      - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                       - [0.14.1]           -- A powerful and highly extensible CLI document and bibliography manager
