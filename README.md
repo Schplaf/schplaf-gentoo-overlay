@@ -4,7 +4,7 @@ Package list:
 * app-admin/pass-import                - [3.5]              -- A pass extension for importing data from most existing password managers
 * app-benchmarks/load-time             - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
-* app-i18n/deepl-cli                   - [2.0.0]            -- DeepL Translator CLI without API Key
+* app-i18n/deepl-cli                   - [2.2.0]            -- DeepL Translator CLI without API Key
 * app-misc/gocost                      - [1.5.0]            -- Simple TUI application to manage monthly expenses
 * app-misc/glow                        - [2.1.1]            -- Render markdown on the CLI
 * app-misc/isbntools                   - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers...
