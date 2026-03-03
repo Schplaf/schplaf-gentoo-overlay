@@ -6,15 +6,21 @@ EAPI=8
 DISTUTILS_USE_PEP517=no
 PYTHON_COMPAT=( python3_{9..13} )
 
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="A TUI MarkDown editor with live preview"
 HOMEPAGE="
 	https://cp737.net/blog/markln-markdown-editor-for-the-terminal
 	https://github.com/xqtr/markln.git
 "
-#SRC_URI="https://github.com/xqtr/markln.git"
-EGIT_REPO_URI="https://github.com/xqtr/${PN}.git"
+if [[ "${PV}" == *9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/xqtr/${PN}.git"
+else
+	SRC_URI="https://github.com/xqtr/markln/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+fi
+
+
 
 LICENSE="GPL-3"
 SLOT="0"
