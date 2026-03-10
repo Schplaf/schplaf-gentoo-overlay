@@ -5,14 +5,14 @@ EAPI=8
 
 inherit go-module
 
-MY_PN=GopherTube
-MY_P=${MY_PN}-${PV}
-S=${WORKDIR}/${MY_P}
-
 DESCRIPTION="A modern TUI for searching and watching YouTube videos using mpv and chafa"
 HOMEPAGE="https://github.com/KrishnaSSH/GopherTube"
 SRC_URI="https://github.com/KrishnaSSH/GopherTube/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 SRC_URI+=" https://gitea.com/slash/schplaf-gentoo-overlay-files/raw/tag/${P}/gophertube/${P}-deps.tar.xz"
+
+MY_PN=GopherTube
+MY_P=${MY_PN}-${PV}
+S=${WORKDIR}/${MY_P}
 
 LICENSE="GPL-3"
 SLOT="0"
