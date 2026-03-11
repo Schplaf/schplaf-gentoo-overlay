@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+		<name>jcb</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/mega123-art/PostDad/issues</bugs-to>
+		<remote-id type="github">mega123-art/PostDad</remote-id>
+	</upstream>
+</pkgmetadata>
