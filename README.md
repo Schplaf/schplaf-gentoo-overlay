@@ -64,7 +64,7 @@ Package list:
 * media-sound/castero                  - [0.9.5]            -- TUI podcast client for the terminal
 * net-dns/owns                         - [0.8.1]            -- A personal DNS server designed to solve problems associated with VPN use
 * net-misc/ddgr                        - [2.2]              -- A command line utility to search DuckDuckGo from the terminal
-* net-misc/gophertube                  - [2.8.0]            -- A modern TUI for searching and watching YouTube videos using mpv and chafa
+* net-misc/gophertube                  - [2.8.0-r2]         -- A modern TUI for searching and watching YouTube videos using mpv and chafa
 * net-misc/reddit-tui                  - [0.3.9]            -- Terminal UI for reddit
 * net-misc/ytsurf                      - [3.1.5]            -- Simple shell script to search for YouTube videos from your terminal
 * net-misc/tuir                        - [1.29.0-r3]        -- A terminal user interface (TUI) for Reddit
