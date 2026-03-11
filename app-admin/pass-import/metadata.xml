@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+		<name>jcb</name>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/roddhjav/pass-import/issues</bugs-to>
+		<changelog>https://github.com/roddhjav/pass-import/blob/master/CHANGELOG.md</changelog>
+		<doc>https://www.passwordstore.org/</doc>
+		<remote-id type="github">roddhjav/pass-import</remote-id>
+		<remote-id type="pypi">pass-import</remote-id>
+	</upstream>
+</pkgmetadata>
