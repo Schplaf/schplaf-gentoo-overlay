@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		Textual is a Rapid Application Development framework for Python, built by Textualize.io.
+		It helps to build sophisticated user interfaces with a simple Python API.
+		Apps can be run in the terminal or a web browser.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/Textualize/textual/issues</bugs-to>
+		<changelog>https://github.com/Textualize/textual/blob/main/CHANGELOG.md</changelog>
+		<doc>https://textual.textualize.io/</doc>
+		<remote-id type="github">Textualize/textual</remote-id>
+		<remote-id type="pypi">textual</remote-id>
+	</upstream>
+</pkgmetadata>
