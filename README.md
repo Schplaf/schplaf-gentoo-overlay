@@ -1,7 +1,6 @@
 slash's personal overlay
 
 Package list:
-* app-admin/pass-import                - [3.5]              -- A pass extension for importing data from most existing password managers
 * app-benchmarks/load-time             - [9999]             -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
 * app-i18n/deepl-cli                   - [2.2.0]            -- DeepL Translator CLI without API Key
