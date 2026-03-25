@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>slash@schplaf.org</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">mtkennerly/dunamai</remote-id>
+		<remote-id type="pypi">dunamai</remote-id>
+		<bugs-to>https://github.com/mtkennerly/dunamai/</bugs-to>
+		<doc>https://dunamai.readthedocs.io/</doc>
+		<changelog>https://github.com/mtkennerly/dunamai/blob/master/CHANGELOG.md</changelog>
+	</upstream>
+</pkgmetadata>
