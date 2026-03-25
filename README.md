@@ -53,7 +53,7 @@ Package list:
 * dev-python/textual                   - [8.1.1]            -- Python framework to build sophisticated UI
 * dev-python/textual-plotext           - [0.2.1]            -- A Textual widget wrapper library for Plotext
 * dev-python/textual-speedups          - [0.2.1-r1]         -- Optional Rust speedups for Textual (dev-python/textual)
-* dev-python/uv-dynamic-versioning     - [0.8.2]            -- Dynamic versioning based on VCS tags for uv/hatch project
+* dev-python/uv-dynamic-versioning     - [0.13.0]           -- Dynamic versioning based on VCS tags for uv/hatch project
 * dev-python/zope-dottedname           - [6.0]              -- Resolve strings containing dotted names into the appropriate python object
 * dev-vcs/gitstats                     - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool                      - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
