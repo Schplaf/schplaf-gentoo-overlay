@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="pperson">
+		<email>slash@schplaf.org</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">ninoseki/uv-dynamic-versioning</remote-id>
+		<remote-id type="pypi">uv-dynamic-versioning</remote-id>
+	</upstream>
+</pkgmetadata>
