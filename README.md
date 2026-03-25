@@ -30,7 +30,7 @@ Package list:
 * dev-python/arxiv2bib                 - [1.0.8-r1]         -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
 * dev-python/climage                   - [0.2.2]            -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/citeproc-py               - [0.8.2]            -- A CSL processor for Python which aims to implement the CSL 1.0.1 specification
-* dev-python/dunamai                   - [1.24.1]           -- Dynamic versioning library and CLI
+* dev-python/dunamai                   - [1.26.0-r1]        -- Dynamic versioning library and CLI
 * dev-python/eval-type-backport        - [0.2.2]            -- Replacement for typing._eval_type to support newer typing features in older Python versions
 * dev-python/fire                      - [0.7.1]            -- Library for automatically generating CLIs with a single line of code
 * dev-python/gevent                    - [25.5.1]           -- Coroutine-based concurrency library for Python
