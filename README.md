@@ -37,7 +37,7 @@ Package list:
 * dev-python/grequests                 - [0.7.0]            -- Use Requests with Gevent to make asynchronous HTTP Requests easily
 * dev-python/habanero                  - [2.3.0]            -- Low level client for Crossref search API
 * dev-python/imghdr-lts                - [9999]             -- A "temporary" solution to compensate for the end of imghdr in Python3.13
-* dev-python/install-playwright-python - [0.1.1]            -- Execute `playwright install` from Python
+* dev-python/install-playwright-python - [1.0.0]            -- Execute `playwright install` from Python
 * dev-python/isbnlib                   - [3.10.14-r1]       -- A library to validate, clean, transform and get metadata for ISBN strings
 * dev-python/kitchen                   - [1.2.6-r3]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/papis-python-rofi         - [1.0.2-r1]         -- Python module to create simple GUIs with Rofi (fork for papis)
