@@ -1,0 +1,12 @@
+--- a/setup.py	2026-03-25 17:32:01.008060243 +0100
++++ b/setup.py	2026-03-27 15:46:42.262459329 +0100
+@@ -113,7 +113,8 @@
+     temp_destination_path = destination_path + ".tmp"
+     print(f"Fetching {url}")
+     # Don't replace this with urllib - Python won't have certificates to do SSL on all platforms.
+-    subprocess.check_call(["curl", url, "-o", temp_destination_path])
++    # Gentoo packaging: Do not call curl or any other tool to fetch a file during the compile phase
++    # subprocess.check_call(["curl", url, "-o", temp_destination_path])
+     os.rename(temp_destination_path, destination_path)
+ 
+ 
