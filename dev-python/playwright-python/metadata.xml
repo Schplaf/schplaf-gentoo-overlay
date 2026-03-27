@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">microsoft/playwright-python</remote-id>
+		<remote-id type="pypi">playwright</remote-id>
+		<bugs-to>https://github.com/microsoft/playwright-python/issues</bugs-to>
+		<doc>https://playwright.dev/python/</doc>
+	</upstream>
+</pkgmetadata>
