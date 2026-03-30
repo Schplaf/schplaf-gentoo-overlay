@@ -9,6 +9,9 @@
 		It helps to build sophisticated user interfaces with a simple Python API.
 		Apps can be run in the terminal or a web browser.
 	</longdescription>
+	<use>
+		<flag name="rust-speedups">Use the optional Rust speedups for Textual (experimental)</flag>
+	</use>
 	<upstream>
 		<bugs-to>https://github.com/Textualize/textual/issues</bugs-to>
 		<changelog>https://github.com/Textualize/textual/blob/main/CHANGELOG.md</changelog>
