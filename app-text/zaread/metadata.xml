@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+		<longdescription></longdescription>
+		<use>
+			<flag name="">enable support for office documents, CSV and RTF</flag>
+			<flag name="">enable mobi support</flag>
+			<flag name="">enable typst support</flag>
+  	</use>
+		<upstream>
+			<bugs-to>https://github.com/paoloap/zaread/issues</bugs-to>
+			<changelog></changelog>
+			<remote-id type="github">paoloap/zaread</remote-id>
+		</maintainer>
+</pkgmetadata>
