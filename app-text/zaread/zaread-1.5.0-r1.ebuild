@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop
+inherit desktop xdg
 
 if [[ ${PV} != 9999 ]]; then
 	SRC_URI="https://github.com/paoloap/zaread/archive/refs/tags/v${PV}.tar.gz  -> ${P}.gh.tar.gz"

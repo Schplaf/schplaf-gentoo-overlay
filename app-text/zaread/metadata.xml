@@ -15,10 +15,9 @@
 		<flag name="mobi">enable mobi support</flag>
 		<flag name="typst">enable typst support</flag>
 		<flag name="markdown">enable markdown support via app-text/md2pdf</flag>
-  	</use>
+	</use>
 	<upstream>
 		<bugs-to>https://github.com/paoloap/zaread/issues</bugs-to>
-		<changelog></changelog>
 		<remote-id type="github">paoloap/zaread</remote-id>
 	</upstream>
 </pkgmetadata>
