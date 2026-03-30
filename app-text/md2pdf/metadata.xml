@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		md2pdf is an tool for converting Markdown files to PDF with styles.
+		It is written in Python
+    </longdescription>
+	<use>
+		<flag name="cli">enable CLI usage support</flag>
+	</use>
+	<upstream>
+		<bugs-to>https://github.com/jmaupetit/md2pdf/issues/</bugs-to>
+		<changelog>https://github.com/jmaupetit/md2pdf/blob/main/CHANGELOG.md</changelog>
+		<remote-id type="github">jmaupetit/md2pdf</remote-id>
+		<remote-id type="pypi">md2pdf</remote-id>
+	</upstream>
+</pkgmetadata>
