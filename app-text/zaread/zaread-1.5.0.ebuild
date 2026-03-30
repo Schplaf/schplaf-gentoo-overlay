@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit desktop xdg
+inherit desktop
 
 if [[ ${PV} != 9999 ]]; then
 	SRC_URI="https://github.com/paoloap/zaread/archive/refs/tags/v${PV}.tar.gz  -> ${P}.gh.tar.gz"
@@ -19,13 +19,24 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE="zathura"
+IUSE="typst office mobi" #markdown
 
-#libreoffice + optionally zathura
+#Mandatopry dependencies: zathura
+#+ optional dependencies:
+#  - LibreOffice (office documents, CSV and RTF)
+#  - Typst (typst documents)
+#  - Calibre (convert mobi files using ebook-convert)
+#  - md2pdf (markdown)
 DEPEND="
-	virtual/ooo
-	zathura? ( app-text/zathura )
+	app-text/zathura
+	office? ( virtual/ooo )
+	mobi? ( app-text/calibre )
+	typst? ( app-text/typst )
 "
+#TODO:
+#- markdown? ( app-text/md2pdf )
+#- add alternatives to md2pdf (for instance pandoc)
+
 RDEPEND="${DEPEND}"
 
 DOCS=( README.md LICENSE )

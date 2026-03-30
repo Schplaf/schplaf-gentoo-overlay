@@ -23,7 +23,7 @@ Package list:
 * app-text/ods2md                      - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                       - [0.14.1]           -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/urlscan                     - [1.0.8]            -- Mutt and terminal url selector (similar to urlview)
-* app-text/zaread                      - [9999]             -- A (very) lightweight MS Office files reader
+* app-text/zaread                      - [1.5.0 & 9999]     -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex                    - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated
 * dev-cpp/tabular                      - [1.5.2]            -- Lightweight, header-only C++ library for creating well-formatted, fully-customizable CLI tables.
 * dev-python/arxiv-py                  - [2.2.0]            -- Python wrapper for the arXiv API
