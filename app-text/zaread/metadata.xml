@@ -3,15 +3,22 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>jcb@schplaf.org</email>
-		<longdescription></longdescription>
-		<use>
-			<flag name="">enable support for office documents, CSV and RTF</flag>
-			<flag name="">enable mobi support</flag>
-			<flag name="">enable typst support</flag>
+	</maintainer>
+	<longdescription>
+		zaread is a simple POSIX shell script that uses zathura as a lightweight, read-only document viewer.
+		PDFs, EPUBs, and DJVUs open directly in zathura.
+		Everything else gets converted to PDF, cached in ~/.cache/zaread/, and opened from there.
+		If the source file changes, zaread detects the difference and re-converts automatically.
+	</longdescription>
+	<use>
+		<flag name="office">enable support for office documents, CSV and RTF</flag>
+		<flag name="mobi">enable mobi support</flag>
+		<flag name="typst">enable typst support</flag>
+		<flag name="markdown">enable markdown support via app-text/md2pdf</flag>
   	</use>
-		<upstream>
-			<bugs-to>https://github.com/paoloap/zaread/issues</bugs-to>
-			<changelog></changelog>
-			<remote-id type="github">paoloap/zaread</remote-id>
-		</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/paoloap/zaread/issues</bugs-to>
+		<changelog></changelog>
+		<remote-id type="github">paoloap/zaread</remote-id>
+	</upstream>
 </pkgmetadata>
