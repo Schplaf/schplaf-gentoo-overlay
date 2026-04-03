@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		Baca is a TUI ebook reader.
+		It allows to read epub, epub3, mobi and azw ebboks in the terminal.
+
+		Images and hyperlinks can be clicked.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/wustho/baca/issues</bugs-to>
+		<remote-id type="github">wustho/baca</remote-id>
+	</upstream>
+</pkgmetadata>
