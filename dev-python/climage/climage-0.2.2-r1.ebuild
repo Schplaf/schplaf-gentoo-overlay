@@ -17,7 +17,7 @@ HOMEPAGE="
 	https://github.com/pnappa/CLImage
 	https://pypi.org/project/climage/
 "
-SRC_URI="https://github.com/pnappa/CLImage/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}.tar.gz"
+SRC_URI="https://github.com/pnappa/CLImage/archive/refs/tags/v${PV}.tar.gz -> ${MY_P}.gh.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		CLImage is a tool that converts images to ANSI escape codes for display in command line interfaces.
+
+		It can be used as both a CLI application and a Python library.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/pnappa/CLImage/issues</bugs-to>
+		<remote-id type="github">pnappa/CLImage
+</remote-id>
+		<remote-id type="pypi">climage</remote-id>
+	</upstream>
+</pkgmetadata>
