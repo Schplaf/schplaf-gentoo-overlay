@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		pykdtree is a kd-tree implementation for fast nearest neighbour search in Python. The aim is to be the fastest implementation around for common use cases (low dimensions and low number of neighbours) for both tree construction and queries.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/storpipfugl/pykdtree/issues</bugs-to>
+		<changelog>https://github.com/storpipfugl/pykdtree/blob/master/CHANGELOG.md</changelog>
+		<remote-id type="github">storpipfugl/pykdtree</remote-id>
+		<remote-id type="pypi">pykdtree</remote-id>
+	</upstream>
+</pkgmetadata>
