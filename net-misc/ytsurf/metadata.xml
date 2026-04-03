@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>slash@schplaf.org</email>
+		<name>slash</name>
+	</maintainer>
+	<longdescription>
+		ytsurf allows you to browse YouTube in your terminal (clean and distraction-free).
+	</longdescription>
+	<use>
+		<flag name="rofi">support of rofi as selector (instead of fzf), for users who prefer a graphical menu</flag>
+		<flag name="sentaku">support of sentaku as selector (instead of fzf) for systemms without go/fzf support</flag>
+		<flag name="syncplay">syncplay support to watch videos together in sync</flag>
+  	</use>
+	<upstream>
+		<bugs-to>https://github.com/Stan-breaks/ytsurf/issues</bugs-to>
+		<remote-id type="github">Stan-breaks/ytsurf</remote-id>
+	</upstream>
+</pkgmetadata>
