@@ -13,7 +13,7 @@ Package list:
 * app-misc/nn                          - [9999]             -- A minimalist Bash script to manage your notes
 * app-misc/rustormy                    - [0.4.1]            -- Minimal neofetch-like weather CLI
 * app-shells/sentaku                   - [0.8.1]            -- Utility to make sentaku (selection, 選択(sentaku)) window with shell command
-* app-text/baca                        - [0.1.17-r4]        -- A TUI Ebook Reader
+* app-text/baca                        - [0.1.17-r5]        -- A TUI Ebook Reader
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical                    - [1.0.1]            -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/doxx                        - [0.1.2]            -- Terminal document viewer for .docx files
@@ -29,7 +29,7 @@ Package list:
 * dev-cpp/tabular                      - [1.5.2]            -- Lightweight, header-only C++ library for creating well-formatted, fully-customizable CLI tables.
 * dev-python/arxiv-py                  - [2.2.0]            -- Python wrapper for the arXiv API
 * dev-python/arxiv2bib                 - [1.0.8-r1]         -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
-* dev-python/climage                   - [0.2.2]            -- Tool that converts images to beautiful ANSI escape codes for display in CLI
+* dev-python/climage                   - [0.2.2-r1]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
 * dev-python/citeproc-py               - [0.8.2]            -- A CSL processor for Python which aims to implement the CSL 1.0.1 specification
 * dev-python/dunamai                   - [1.26.0-r1]        -- Dynamic versioning library and CLI
 * dev-python/eval-type-backport        - [0.2.2]            -- Replacement for typing._eval_type to support newer typing features in older Python versions
@@ -46,12 +46,12 @@ Package list:
 * dev-python/playwright-python         - [1.58.0]           -- Library to automate Chromium, Firefox and WebKit browsers with a single API
 * dev-python/pyee                      - [13.0.0]           -- A rough port of Node.js's EventEmitter to Python with a few tricks of its own
 * dev-python/pyexcel-ezodf             - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
-* dev-python/pykdtree                  - [1.4.3]            -- Fast kd-tree implementation with OpenMP-enabled queries
+* dev-python/pykdtree                  - [1.4.3-r1]         -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify        - [1.2.2]            -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap          - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
-* dev-python/textual                   - [8.2.1]            -- Python framework to build sophisticated UI
+* dev-python/textual                   - [8.2.2]            -- Python framework to build sophisticated UI
 * dev-python/textual-plotext           - [0.2.1]            -- A Textual widget wrapper library for Plotext
 * dev-python/textual-speedups          - [0.2.1-r1]         -- Optional Rust speedups for Textual (dev-python/textual)
 * dev-python/uv-dynamic-versioning     - [0.13.0]           -- Dynamic versioning based on VCS tags for uv/hatch project
