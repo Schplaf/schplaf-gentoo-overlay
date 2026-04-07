@@ -56,7 +56,7 @@ Package list:
 * dev-python/textual-speedups          - [0.2.1-r1]         -- Optional Rust speedups for Textual (dev-python/textual)
 * dev-python/uv-dynamic-versioning     - [0.13.0]           -- Dynamic versioning based on VCS tags for uv/hatch project
 * dev-python/zope-dottedname           - [6.0]              -- Resolve strings containing dotted names into the appropriate python object
-* dev-vcs/gitstats                     - [0_pre20201124-r1] -- Statistics generator for git [temporary ebuild, until the official one is updated]
+* dev-vcs/gitstats                     - [0_pre20201124-r2] -- Statistics generator for git [temporary ebuild, until the official one is updated]
 * dev-vcs/vcstool                      - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
 * games-strategy/unciv-bin             - [4.19.19]          -- Civ V remake for Android & Desktop
 * media-fonts/square                   - [1.0]              -- A TTF font designed to make characters fill a square space
