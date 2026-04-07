@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		Statistics generator for git [temporary ebuild, until an official update]
+
+		Should it be removed? Should the reference fork modified?
+		(for instance: https://github.com/mationai/gitstats)
+
+		Open to any discussion.
+	</longdescription>
+	<upstream>
+		<doc>https://github.com/gktrk/gitstats/blob/master/doc/gitstats.pod</doc>
+		<remote-id type="github">gktrk/gitstats</remote-id>
+	</upstream>
+</pkgmetadata>

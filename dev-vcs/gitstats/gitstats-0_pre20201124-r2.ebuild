@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{9..14} )
 
 inherit python-r1
 
-DESCRIPTION="Statistics generator for git [temporary ebuild, until an official update"
+DESCRIPTION="Statistics generator for git [temporary ebuild, until an official update]"
 HOMEPAGE="http://gitstats.sourceforge.net/"
 SRC_URI="https://github.com/gktrk/gitstats/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
