@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+		castero is a TUI podcast client for the terminal.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/xgi/castero/issues</bugs-to>
+		<changelog>https://github.com/xgi/castero/blob/master/CHANGELOG.md</changelog>
+dd		<doc></doc>
+		<remote-id type="github">xgi/castero</remote-id>
+		<remote-id type="pypi">castero</remote-id>
+	</upstream>
+</pkgmetadata>
