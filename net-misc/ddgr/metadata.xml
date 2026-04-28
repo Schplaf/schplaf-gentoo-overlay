@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>slash@schplaf.org</email>
+		<name>slash</name>
+	</maintainer>
+	<longdescription>
+		ddgr is a cmdline utility to search DuckDuckGo from the terminal.
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/</bugs-to>
+		<changelog>https://github.com/jarun/ddgr/blob/main/CHANGELOG</changelog>
+		<remote-id type="github">jarun/ddgr</remote-id>
+		<remote-id type="pypi">ddgr</remote-id>
+	</upstream>
+</pkgmetadata>
