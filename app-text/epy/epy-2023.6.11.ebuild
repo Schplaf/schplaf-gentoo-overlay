@@ -4,13 +4,12 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit distutils-r1
 
 DESCRIPTION="A fork of epr, a CLI Ebook Reader"
 HOMEPAGE="https://github.com/wustho/epy"
 SRC_URI="https://github.com/wustho/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-
 
 LICENSE="GPL-3"
 SLOT="0"
