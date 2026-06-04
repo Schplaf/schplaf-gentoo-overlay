@@ -1,0 +1,496 @@
+diff '--color=auto' -ru a/flake.nix b/flake.nix
+--- a/flake.nix	2026-06-03 11:32:03.351223088 +0200
++++ b/flake.nix	2026-06-03 11:06:19.720300400 +0200
+@@ -18,12 +18,13 @@
+     devShells = {
+       default = pkgs.mkShell {
+         packages = [
++          haskell.ghc
++          haskell.goldplate
++          haskell.stylish-haskell
+           pkgs.cabal-install
+           pkgs.entr
+           pkgs.wezterm
+-          haskell.goldplate
+-          haskell.stylish-haskell
+-          (haskell.ghc.withPackages (p: inputs.self.packages.${system}.default.buildInputs))
++          pkgs.zlib
+         ];
+       };
+     };
+diff '--color=auto' -ru a/lib/Patat/Presentation/Display/Internal.hs b/lib/Patat/Presentation/Display/Internal.hs
+--- a/lib/Patat/Presentation/Display/Internal.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Display/Internal.hs	2026-06-03 11:06:19.721470669 +0200
+@@ -7,7 +7,7 @@
+ 
+ --------------------------------------------------------------------------------
+ import           Patat.Presentation.Internal (Margins)
+-import           Patat.Presentation.Settings (Wrap)
++import           Patat.Presentation.Settings (Wrap, LinkPlacement)
+ import           Patat.Presentation.Syntax   (Block, RevealState, Var)
+ import qualified Patat.PrettyPrint           as PP
+ import           Patat.Size                  (Size)
+@@ -17,15 +17,16 @@
+ 
+ --------------------------------------------------------------------------------
+ data DisplaySettings = DisplaySettings
+-    { dsSize        :: !Size
+-    , dsWrap        :: !Wrap
+-    , dsTabStop     :: !Int
+-    , dsMargins     :: !Margins
+-    , dsOSC8        :: !Bool
+-    , dsTheme       :: !Theme.Theme
+-    , dsSyntaxMap   :: !Skylighting.SyntaxMap
+-    , dsResolve     :: !(Var -> [Block])
+-    , dsRevealState :: !RevealState
++    { dsSize          :: !Size
++    , dsWrap          :: !Wrap
++    , dsTabStop       :: !Int
++    , dsMargins       :: !Margins
++    , dsOSC8          :: !Bool
++    , dsLinkPlacement :: !LinkPlacement
++    , dsTheme         :: !Theme.Theme
++    , dsSyntaxMap     :: !Skylighting.SyntaxMap
++    , dsResolve       :: !(Var -> [Block])
++    , dsRevealState   :: !RevealState
+     }
+ 
+ 
+diff '--color=auto' -ru a/lib/Patat/Presentation/Display.hs b/lib/Patat/Presentation/Display.hs
+--- a/lib/Patat/Presentation/Display.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Display.hs	2026-06-03 11:06:19.721330188 +0200
+@@ -59,16 +59,17 @@
+     borders (PP.space <> PP.string author <> middleSpaces <> PP.string active <> PP.space) <>
+     PP.hardline
+   where
+-    -- Get terminal width/title
+-    settings     = activeSettings pres
++    settings@PresentationSettings {..} = activeSettings pres
++
+     (sidx, _)    = pActiveFragment
+     ds           = DisplaySettings
+         { dsSize          = canvasSize
+         , dsMargins       = margins settings
+-        , dsWrap          = fromMaybe NoWrap $ psWrap settings
+-        , dsTabStop       = maybe 4 A.unFlexibleNum $ psTabStop settings
+-        , dsOSC8          = fromMaybe False (psLinks settings >>= lsOSC8)
+-        , dsTheme         = fromMaybe Theme.defaultTheme (psTheme settings)
++        , dsWrap          = fromMaybe NoWrap psWrap
++        , dsTabStop       = maybe 4 A.unFlexibleNum psTabStop
++        , dsOSC8          = fromMaybe False (psLinks >>= lsOSC8)
++        , dsLinkPlacement = fromMaybe ReferenceLinkPlacement (psLinks >>= lsPlacement)
++        , dsTheme         = fromMaybe Theme.defaultTheme psTheme
+         , dsSyntaxMap     = pSyntaxMap
+         , dsResolve       = \var -> fromMaybe [] $ HMS.lookup var pVars
+         , dsRevealState   = revealState
+@@ -87,9 +88,9 @@
+         , s <- [" > ", PP.toString b]
+         ]
+     title
+-        | not . fromMaybe True $ psBreadcrumbs settings = plainTitle
+-        | wcstrwidth breadTitle > columns               = plainTitle
+-        | otherwise                                     = breadTitle
++        | not . fromMaybe True $ psBreadcrumbs = plainTitle
++        | wcstrwidth breadTitle > columns      = plainTitle
++        | otherwise                            = breadTitle
+ 
+     -- Dimensions of title.
+     titleWidth  = wcstrwidth title
+@@ -101,8 +102,8 @@
+ 
+     -- Compute footer.
+     active
+-        | fromMaybe True $ psSlideNumber settings = show (sidx + 1) ++ " / " ++ show (length pSlides)
+-        | otherwise                               = ""
++        | fromMaybe True psSlideNumber = show (sidx + 1) ++ " / " ++ show (length pSlides)
++        | otherwise                    = ""
+     activeWidth  = wcstrwidth active
+     author       = PP.toString (prettyInlines ds pAuthor)
+     authorWidth  = wcstrwidth author
+@@ -128,11 +129,9 @@
+   where
+     -- Check if the fragment consists of "just a single image".  Discard
+     -- headers.
+-    onlyImage (Header{} : bs) = onlyImage bs
+-    onlyImage bs = case bs of
+-        [Figure _ bs']                 -> onlyImage bs'
+-        [Para [Image _ _ (target, _)]] -> Just target
+-        _                              -> Nothing
++    onlyImage (Header{} : bs)         = onlyImage bs
++    onlyImage [Image _ _ (target, _)] = Just target
++    onlyImage _                       = Nothing
+ 
+ 
+ --------------------------------------------------------------------------------
+@@ -187,6 +186,7 @@
+ prettyMargins ds blocks = vertical $
+     map horizontal blocks ++
+     case prettyReferences ds blocks of
++        _ | DropLinkPlacement <- dsLinkPlacement ds -> []
+         []   -> []
+         refs ->
+             let doc0        = PP.vcat refs
+@@ -398,7 +398,9 @@
+     PP.vcat $
+     map (prettyInlines ds) inliness
+ 
+-prettyBlock ds (Figure _attr blocks) = prettyBlocks ds blocks
++prettyBlock ds (Image _attrs text (target, _title)) =
++    "![" <> themed ds themeImageText (prettyInlines ds text) <> "](" <>
++    themed ds themeImageTarget (PP.text target) <> ")"
+ 
+ prettyBlock ds (Reveal w fragment) = prettyBlocks ds $
+     revealToBlocks (dsRevealState ds) w fragment
+@@ -459,10 +461,6 @@
+ prettyInline ds (Math _ t) =
+     themed ds themeMath (PP.text t)
+ 
+-prettyInline ds (Image _attrs text (target, _title)) =
+-    "![" <> themed ds themeImageText (prettyInlines ds text) <> "](" <>
+-    themed ds themeImageTarget (PP.text target) <> ")"
+-
+ prettyInline _ (RawInline _ t) = PP.text t
+ 
+ -- These elements aren't really supported.
+@@ -497,10 +495,11 @@
+     prettyReference :: Reference -> PP.Doc
+     prettyReference (text, target, title) =
+         "[" <>
+-        themed ds themeLinkText
+-            (prettyInlines ds $ newlineToSpace text) <>
++        (themed ds themeLinkText $
++            hyperlink ds target $ Just $
++                prettyInlines ds $ newlineToSpace text) <>
+         "]: " <>
+-        themed ds themeLinkTarget (PP.text target) <>
++        (themed ds themeLinkTarget $ hyperlink ds target Nothing) <>
+         (if T.null title
+             then mempty
+             else PP.space <> PP.text title)
+@@ -524,8 +523,9 @@
+ --------------------------------------------------------------------------------
+ hyperlink :: DisplaySettings -> T.Text -> Maybe PP.Doc -> PP.Doc
+ hyperlink ds url Nothing
+-    | dsOSC8 ds = PP.hyperlink (T.unpack url) (PP.text url)
++    | dsOSC8 ds = themed ds themeLinkOSC8 $
++                    PP.hyperlink (T.unpack url) (PP.text url)
+     | otherwise = PP.text url
+ hyperlink ds url (Just doc)
+-    | dsOSC8 ds = PP.hyperlink (T.unpack url) doc
++    | dsOSC8 ds = themed ds themeLinkOSC8 $ PP.hyperlink (T.unpack url) doc
+     | otherwise = doc
+diff '--color=auto' -ru a/lib/Patat/Presentation/Fragment.hs b/lib/Patat/Presentation/Fragment.hs
+--- a/lib/Patat/Presentation/Fragment.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Fragment.hs	2026-06-03 11:06:19.721545840 +0200
+@@ -100,11 +100,11 @@
+ fragmentBlock _ block@(Div {})            = pure [block]
+ fragmentBlock _ block@HorizontalRule      = pure [block]
+ fragmentBlock _ block@(LineBlock {})      = pure [block]
+-fragmentBlock _ block@(Figure {})         = pure [block]
+ fragmentBlock _ block@(VarBlock {})       = pure [block]
+ fragmentBlock _ block@(SpeakerNote {})    = pure [block]
+ fragmentBlock _ block@(Config {})         = pure [block]
+ fragmentBlock _ block@(Reveal {})         = pure [block]  -- Should not happen
++fragmentBlock _ block@(Image {})          = pure [block]
+ 
+ fragmentList
+     :: FragmentSettings   -- ^ Global settings
+diff '--color=auto' -ru a/lib/Patat/Presentation/Read.hs b/lib/Patat/Presentation/Read.hs
+--- a/lib/Patat/Presentation/Read.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Read.hs	2026-06-03 11:06:19.721650641 +0200
+@@ -231,7 +231,7 @@
+ 
+ 
+ --------------------------------------------------------------------------------
+--- | Split a pandoc document into slides.  If the document contains horizonal
++-- | Split a pandoc document into slides.  If the document contains horizontal
+ -- rules, we use those as slide delimiters.  If there are no horizontal rules,
+ -- we split using headers, determined by the slide level (see
+ -- 'detectSlideLevel').
+diff '--color=auto' -ru a/lib/Patat/Presentation/Settings.hs b/lib/Patat/Presentation/Settings.hs
+--- a/lib/Patat/Presentation/Settings.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Settings.hs	2026-06-03 11:06:19.721694091 +0200
+@@ -1,4 +1,5 @@
+ --------------------------------------------------------------------------------
++{-# LANGUAGE CPP                        #-}
+ {-# LANGUAGE GADTs                      #-}
+ {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+ {-# LANGUAGE OverloadedStrings          #-}
+@@ -24,6 +25,7 @@
+ 
+     , TransitionSettings (..)
+ 
++    , LinkPlacement (..)
+     , LinkSettings (..)
+ 
+     , parseSlideSettings
+@@ -206,7 +208,6 @@
+     , Pandoc.Ext_fancy_lists
+     , Pandoc.Ext_four_space_rule
+     , Pandoc.Ext_definition_lists
+-    , Pandoc.Ext_compact_definition_lists
+     , Pandoc.Ext_example_lists
+     , Pandoc.Ext_strikeout
+     , Pandoc.Ext_superscript
+@@ -314,22 +315,40 @@
+ 
+ 
+ --------------------------------------------------------------------------------
++data LinkPlacement
++    = ReferenceLinkPlacement
++    | DropLinkPlacement
++    deriving (Eq, Show)
++
++
++--------------------------------------------------------------------------------
++instance A.FromJSON LinkPlacement where
++    parseJSON = A.withText "FromJSON LinkPlacement" $ \t -> case t of
++        "reference" -> pure ReferenceLinkPlacement
++        "drop"      -> pure DropLinkPlacement
++        _           -> fail $ "unknown placement: " <> show t
++
++
++--------------------------------------------------------------------------------
+ data LinkSettings = LinkSettings
+-    { lsOSC8 :: !(Maybe Bool)
++    { lsOSC8      :: !(Maybe Bool)
++    , lsPlacement :: !(Maybe LinkPlacement)
+     } deriving (Eq, Show)
+ 
+ 
+ --------------------------------------------------------------------------------
+ instance Semigroup LinkSettings where
+     l <> r = LinkSettings
+-        { lsOSC8 = on mplus lsOSC8 l r
++        { lsOSC8      = on mplus lsOSC8      l r
++        , lsPlacement = on mplus lsPlacement l r
+         }
+ 
+ 
+ --------------------------------------------------------------------------------
+ instance A.FromJSON LinkSettings where
+-    parseJSON = A.withObject "FromJSON LinkSettings" $ \o ->
+-        LinkSettings <$> o A..:? "osc8"
++    parseJSON = A.withObject "FromJSON LinkSettings" $ \o -> LinkSettings
++        <$> o A..:? "osc8"
++        <*> o A..:? "placement"
+ 
+ 
+ --------------------------------------------------------------------------------
+diff '--color=auto' -ru a/lib/Patat/Presentation/Syntax.hs b/lib/Patat/Presentation/Syntax.hs
+--- a/lib/Patat/Presentation/Syntax.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Presentation/Syntax.hs	2026-06-03 11:06:19.721769846 +0200
+@@ -79,13 +79,13 @@
+     | Header Int !Pandoc.Attr ![Inline]
+     | HorizontalRule
+     | Table ![Inline] ![Pandoc.Alignment] ![[Block]] ![[[Block]]]
+-    | Figure !Pandoc.Attr ![Block]
+     | Div !Pandoc.Attr ![Block]
+     -- Our own extensions:
+     | Reveal !RevealWrapper !(RevealSequence [Block])
+     | VarBlock !Var
+     | SpeakerNote !T.Text
+     | Config !(Either String PresentationSettings)
++    | Image !Pandoc.Attr ![Inline] !Pandoc.Target
+     deriving (Eq, Show)
+ 
+ -- | See comment on 'Block'.
+@@ -107,7 +107,6 @@
+     | Math !Pandoc.MathType !T.Text
+     | RawInline !Pandoc.Format !T.Text
+     | Link !Pandoc.Attr ![Inline] !Pandoc.Target
+-    | Image !Pandoc.Attr ![Inline] !Pandoc.Target
+     | Note ![Block]
+     | Span !Pandoc.Attr ![Inline]
+     deriving (Eq, Show)
+@@ -147,12 +146,12 @@
+             <*> pure aligns
+             <*> traverse blocks thead
+             <*> traverse (traverse blocks) trows
+-        Figure attr xs -> Figure attr <$> blocks xs
+         Div attr xs -> Div attr <$> blocks xs
+         Reveal w revealer-> Reveal w <$> traverse blocks revealer
+         b@(VarBlock _var) -> pure b
+         b@(SpeakerNote _txt) -> pure b
+         b@(Config _cfg) -> pure b
++        Image attr xs tgt -> Image attr <$> inlines xs <*> pure tgt
+ 
+ -- | Depth-First Traversal of inlines (and blocks).
+ dftInlines
+@@ -184,7 +183,6 @@
+         i@(Math _ty _txt)       -> pure i
+         i@(RawInline _fmt _txt) -> pure i
+         Link  attr xs tgt -> Link  attr <$> inlines xs <*> pure tgt
+-        Image attr xs tgt -> Image attr <$> inlines xs <*> pure tgt
+         Note blocks -> Note <$> dftBlocks fb fi blocks
+         Span attr xs -> Span attr . concat <$> traverse inline xs
+ 
+@@ -193,6 +191,8 @@
+ 
+ fromPandocBlock :: Pandoc.Block -> [Block]
+ fromPandocBlock (Pandoc.Plain xs) = [Plain (fromPandocInlines xs)]
++fromPandocBlock (Pandoc.Para [Pandoc.Image attrs caption tgt]) =
++    [Image attrs (fromPandocInlines caption) tgt]
+ fromPandocBlock (Pandoc.Para xs) = [Para (fromPandocInlines xs)]
+ fromPandocBlock (Pandoc.LineBlock xs) =
+     [LineBlock (map fromPandocInlines xs)]
+@@ -232,8 +232,11 @@
+     (cptn', aligns, _, headers, rows) = Pandoc.toLegacyTable
+         cptn specs thead tbodies tfoot
+ 
+-fromPandocBlock (Pandoc.Figure attrs _caption blocks) =
+-    [Figure attrs $ fromPandocBlocks blocks]
++fromPandocBlock (Pandoc.Figure _figattrs _figcaption blocks)
++    | [Pandoc.Para [Pandoc.Image attrs caption target]] <- blocks =
++        [Image attrs (fromPandocInlines caption) target]
++    | otherwise = []
++  where
+ fromPandocBlock (Pandoc.Div attrs blocks) =
+     [Div attrs $ fromPandocBlocks blocks]
+ 
+@@ -242,26 +245,26 @@
+ 
+ fromPandocInline :: Pandoc.Inline -> [Inline]
+ fromPandocInline inline = case inline of
+-    Pandoc.Str txt           -> pure $ Str txt
+-    Pandoc.Emph        xs    -> pure $ Emph        (fromPandocInlines xs)
+-    Pandoc.Underline   xs    -> pure $ Underline   (fromPandocInlines xs)
+-    Pandoc.Strong      xs    -> pure $ Strong      (fromPandocInlines xs)
+-    Pandoc.Strikeout   xs    -> pure $ Strikeout   (fromPandocInlines xs)
+-    Pandoc.Superscript xs    -> pure $ Superscript (fromPandocInlines xs)
+-    Pandoc.Subscript   xs    -> pure $ Subscript   (fromPandocInlines xs)
+-    Pandoc.SmallCaps   xs    -> pure $ SmallCaps   (fromPandocInlines xs)
+-    Pandoc.Quoted ty   xs    -> pure $ Quoted ty   (fromPandocInlines xs)
+-    Pandoc.Cite c      xs    -> pure $ Cite c      (fromPandocInlines xs)
+-    Pandoc.Code attr txt     -> pure $ Code attr txt
+-    Pandoc.Space             -> pure $ Space
+-    Pandoc.SoftBreak         -> pure $ SoftBreak
+-    Pandoc.LineBreak         -> pure $ LineBreak
+-    Pandoc.Math ty txt       -> pure $ Math ty txt
+-    Pandoc.RawInline fmt txt -> pure $ RawInline fmt txt
+-    Pandoc.Link  attr xs tgt -> pure $ Link  attr (fromPandocInlines xs) tgt
+-    Pandoc.Image attr xs tgt -> pure $ Image attr (fromPandocInlines xs) tgt
+-    Pandoc.Note xs           -> pure $ Note (fromPandocBlocks xs)
+-    Pandoc.Span attr xs      -> pure $ Span attr (fromPandocInlines xs)
++    Pandoc.Str txt             -> pure $ Str txt
++    Pandoc.Emph        xs      -> pure $ Emph        (fromPandocInlines xs)
++    Pandoc.Underline   xs      -> pure $ Underline   (fromPandocInlines xs)
++    Pandoc.Strong      xs      -> pure $ Strong      (fromPandocInlines xs)
++    Pandoc.Strikeout   xs      -> pure $ Strikeout   (fromPandocInlines xs)
++    Pandoc.Superscript xs      -> pure $ Superscript (fromPandocInlines xs)
++    Pandoc.Subscript   xs      -> pure $ Subscript   (fromPandocInlines xs)
++    Pandoc.SmallCaps   xs      -> pure $ SmallCaps   (fromPandocInlines xs)
++    Pandoc.Quoted ty   xs      -> pure $ Quoted ty   (fromPandocInlines xs)
++    Pandoc.Cite c      xs      -> pure $ Cite c      (fromPandocInlines xs)
++    Pandoc.Code attr txt       -> pure $ Code attr txt
++    Pandoc.Space               -> pure $ Space
++    Pandoc.SoftBreak           -> pure $ SoftBreak
++    Pandoc.LineBreak           -> pure $ LineBreak
++    Pandoc.Math ty txt         -> pure $ Math ty txt
++    Pandoc.RawInline fmt txt   -> pure $ RawInline fmt txt
++    Pandoc.Link  attr xs tgt   -> pure $ Link  attr (fromPandocInlines xs) tgt
++    Pandoc.Image _attr xs _tgt -> fromPandocInlines xs
++    Pandoc.Note xs             -> pure $ Note (fromPandocBlocks xs)
++    Pandoc.Span attr xs        -> pure $ Span attr (fromPandocInlines xs)
+ 
+ isHorizontalRule :: Block -> Bool
+ isHorizontalRule HorizontalRule = True
+@@ -295,7 +298,7 @@
+ -- a counter state.
+ --
+ -- The easiest example to think about is a bullet list which appears
+--- incrmentally on a slide.  Initially, the counter state is 0.  As it is
++-- incrementally on a slide.  Initially, the counter state is 0.  As it is
+ -- incremented (the user goes to the next fragment in the slide), more list
+ -- items become visible.
+ data RevealSequence a = RevealSequence
+diff '--color=auto' -ru a/lib/Patat/Theme.hs b/lib/Patat/Theme.hs
+--- a/lib/Patat/Theme.hs	2026-06-03 11:32:03.351223088 +0200
++++ b/lib/Patat/Theme.hs	2026-06-03 11:06:19.722010232 +0200
+@@ -234,6 +234,7 @@
+     , themeCode               :: !(Maybe Style)
+     , themeLinkText           :: !(Maybe Style)
+     , themeLinkTarget         :: !(Maybe Style)
++    , themeLinkOSC8           :: !(Maybe Style)  -- Undocumented
+     , themeStrikeout          :: !(Maybe Style)
+     , themeQuoted             :: !(Maybe Style)
+     , themeMath               :: !(Maybe Style)
+@@ -265,6 +266,7 @@
+         , themeCode               = mplusOn   themeCode
+         , themeLinkText           = mplusOn   themeLinkText
+         , themeLinkTarget         = mplusOn   themeLinkTarget
++        , themeLinkOSC8           = mplusOn   themeLinkOSC8
+         , themeStrikeout          = mplusOn   themeStrikeout
+         , themeQuoted             = mplusOn   themeQuoted
+         , themeMath               = mplusOn   themeMath
+@@ -283,7 +285,7 @@
+     mempty  = Theme
+         Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing
+         Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing
+-        Nothing Nothing Nothing Nothing Nothing Nothing Nothing
++        Nothing Nothing Nothing Nothing Nothing Nothing Nothing Nothing
+ 
+ --------------------------------------------------------------------------------
+ defaultTheme :: Theme
+@@ -310,6 +312,7 @@
+     , themeCode               = dull Ansi.White `mappend` ondull Ansi.Black
+     , themeLinkText           = dull Ansi.Green
+     , themeLinkTarget         = dull Ansi.Cyan `mappend` underline
++    , themeLinkOSC8           = underline
+     , themeStrikeout          = ondull Ansi.Red
+     , themeQuoted             = dull Ansi.Green
+     , themeMath               = dull Ansi.Green
+diff '--color=auto' -ru a/patat.cabal b/patat.cabal
+--- a/patat.cabal	2026-06-03 11:32:03.351223088 +0200
++++ b/patat.cabal	2026-06-03 11:06:19.722479289 +0200
+@@ -41,17 +41,17 @@
+     bytestring           >= 0.10  && < 0.13,
+     case-insensitive     >= 1.2   && < 1.3,
+     colour               >= 2.3   && < 2.4,
+-    containers           >= 0.5   && < 0.7,
++    containers           >= 0.5   && < 0.8,
+     directory            >= 1.2   && < 1.4,
+     filepath             >= 1.4   && < 1.6,
+-    hashable             >= 1.4   && < 1.5,
++    hashable             >= 1.4   && < 1.6,
+     JuicyPixels          >= 3.3.3 && < 3.4,
+     mtl                  >= 2.2   && < 2.4,
+     optparse-applicative >= 0.16  && < 0.19,
+-    pandoc               >= 3.1   && < 3.7,
++    pandoc               >= 3.1   && < 3.10,
+     pandoc-types         >= 1.23  && < 1.24,
+     process              >= 1.6   && < 1.7,
+-    random               >= 1.2   && < 1.3,
++    random               >= 1.2   && < 1.4,
+     skylighting          >= 0.10  && < 0.15,
+     terminal-size        >= 0.3   && < 0.4,
+     text                 >= 1.2   && < 2.2,
+@@ -135,10 +135,10 @@
+ 
+   Build-depends:
+     base         >= 4.9 && < 5,
+-    containers   >= 0.6 && < 0.8,
++    containers   >= 0.5 && < 0.8,
+     doctemplates >= 0.8 && < 0.12,
+     mtl          >= 2.2 && < 2.4,
+-    pandoc       >= 3.1 && < 3.7,
++    pandoc       >= 3.1 && < 3.10,
+     text         >= 1.2 && < 2.2,
+     time         >= 1.6 && < 1.13
+ 
+@@ -159,12 +159,12 @@
+     ansi-terminal    >= 1.1  && < 1.2,
+     base             >= 4.8  && < 5,
+     directory        >= 1.2  && < 1.4,
+-    pandoc           >= 3.1  && < 3.7,
++    pandoc           >= 3.1  && < 3.10,
+     tasty            >= 1.2  && < 1.6,
+     tasty-hunit      >= 0.10 && < 0.11,
+     tasty-quickcheck >= 0.10 && < 0.12,
+     text             >= 1.2  && < 2.2,
+-    QuickCheck       >= 2.8  && < 2.15
++    QuickCheck       >= 2.8  && < 2.17
+ 
+ Test-suite patat-goldplate
+   Main-is:            Main.hs
+

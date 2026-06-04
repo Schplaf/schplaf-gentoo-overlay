@@ -27,6 +27,7 @@ Package list:
 * app-text/zaread                      - [1.5.0-r1 & 9999]  -- A (very) lightweight MS Office files reader
 * app-vim/vim-latex                    - [1.10.0-r4]        -- A comprehensive set of tools to view, edit and compile LaTeX documents [temporary ebuild, until the official one is updated
 * dev-cpp/tabular                      - [1.5.2]            -- Lightweight, header-only C++ library for creating well-formatted, fully-customizable CLI tables.
+* dev-haskell/patat                    - [0.15.2.0]         -- Terminal-based presentations using Pandoc
 * dev-python/arxiv-py                  - [2.2.0]            -- Python wrapper for the arXiv API
 * dev-python/arxiv2bib                 - [1.0.8-r1]         -- CLI tool to get metadata for academic papers arXiv.org in BibTeX format
 * dev-python/climage                   - [0.2.2-r1]         -- Tool that converts images to beautiful ANSI escape codes for display in CLI
