@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		ezodf is a Python package to create new or open existing OpenDocument 
+		(ODF) files to extract, add, modify or delete document data.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/pyexcel/pyexcel-ezodf/issues</bugs-to>
+		<changelog>https://github.com/pyexcel/pyexcel-ezodf/blob/master/CHANGELOG.rst</changelog>
+		<doc>http://packages.python.org/ezodf</doc>
+		<remote-id type="github">pyexcel/pyexcel-ezodf</remote-id>
+	</upstream>
+</pkgmetadata>
