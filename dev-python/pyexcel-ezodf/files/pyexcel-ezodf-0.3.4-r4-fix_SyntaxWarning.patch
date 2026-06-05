@@ -1,0 +1,22 @@
+--- a/ezodf/tableutils.py	2026-06-05 15:01:28.194083091 +0200
++++ b/ezodf/tableutils.py	2026-06-05 15:03:39.460845556 +0200
+@@ -28,7 +28,7 @@
+     next(generator)
+     return generator
+ 
+-CELL_ADDRESS = re.compile('^([A-Z]+)(\d+)$')
++CELL_ADDRESS = re.compile(r'^([A-Z]+)(\d+)$')
+ 
+ def address_to_index(address):
+     def column_name_to_index(colname):
+--- a/ezodf/timeparser.py	2026-06-05 15:01:28.194218112 +0200
++++ b/ezodf/timeparser.py	2026-06-05 15:04:53.131271200 +0200
+@@ -15,7 +15,7 @@
+ DATE_FORMAT = "%Y-%m-%d"
+ 
+ class TimeParser(object):
+-    duration_matcher = re.compile("^P(\d+Y)?(\d+M)?(\d+D)?(?:T(\d+H)?(\d+M)?(\d+(?:,\d+)?S)?)?$")
++    duration_matcher = re.compile(r"^P(\d+Y)?(\d+M)?(\d+D)?(?:T(\d+H)?(\d+M)?(\d+(?:,\d+)?S)?)?$")
+ 
+     def __init__(self, time):
+         if is_string(time):

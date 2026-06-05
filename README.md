@@ -46,7 +46,7 @@ Package list:
 * dev-python/papis-rofi                - [0.2.0-r2]         -- Papis GUI using Rofi
 * dev-python/playwright-python         - [1.58.0]           -- Library to automate Chromium, Firefox and WebKit browsers with a single API
 * dev-python/pyee                      - [13.0.0]           -- A rough port of Node.js's EventEmitter to Python with a few tricks of its own
-* dev-python/pyexcel-ezodf             - [0.3.4-r3]         -- Library to manipulate OpenDocument files (pyexcel version)
+* dev-python/pyexcel-ezodf             - [0.3.4-r4]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree                  - [1.4.3-r1]         -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify        - [1.2.2]            -- Library to convert HTML to Markdown
