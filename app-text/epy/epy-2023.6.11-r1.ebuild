@@ -9,14 +9,10 @@ inherit distutils-r1
 
 DESCRIPTION="A fork of epr, a CLI Ebook Reader"
 HOMEPAGE="https://github.com/wustho/epy"
-SRC_URI="https://github.com/wustho/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/wustho/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.gh.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
-
-DEPEND=""
-RDEPEND="${DEPEND}"
-BDEPEND=""
 
 DOCS=( README.md LICENSE )

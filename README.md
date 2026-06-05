@@ -17,7 +17,7 @@ Package list:
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
 * app-text/csv2ical                    - [1.0.1]            -- Converts a CSV file with event information to an iCalendar ICS file
 * app-text/doxx                        - [0.1.2]            -- Terminal document viewer for .docx files
-* app-text/epy                         - [2023.6.11]        -- A fork of epr, a CLI Ebook Reader
+* app-text/epy                         - [2023.6.11-r1]     -- A fork of epr, a CLI Ebook Reader
 * app-text/markln                      - [1.3.0 & 9999]     -- A TUI MarkDown editor with live preview
 * app-text/md2pdf                      - [3.1.0]            -- A markdown to PDF conversion tool
 * app-text/objcurses                   - [2.2.1 & 9999]     -- Minimalistic 3D object viewer running the terminal

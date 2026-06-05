@@ -4,7 +4,15 @@
 	<maintainer type="person">
 		<email>jcb@schplaf.org</email>
 	</maintainer>
-	<longdescription></longdescription>
+	<longdescription>
+
+		epy is a CLI Ebook (epub2, epub3, fb2, mobi) reader.
+
+		It is a fork of epr with extra features (more supported formats, 
+		reading progress percentage, bookmarks, some external dictionary 
+		integration, some inline formats, text-to-speech , double spread
+
+	</longdescription>
 	<upstream>
 		<bugs-to>https://github.com/wustho/epy/issues</bugs-to>
 		<remote-id type="github">wustho/epy</remote-id>
