@@ -21,7 +21,7 @@ Package list:
 * app-text/markln                      - [1.3.0 & 9999]     -- A TUI MarkDown editor with live preview
 * app-text/md2pdf                      - [3.1.0]            -- A markdown to PDF conversion tool
 * app-text/objcurses                   - [2.2.1 & 9999]     -- Minimalistic 3D object viewer running the terminal
-* app-text/ods2md                      - [9999-r2]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
+* app-text/ods2md                      - [9999-r3]          -- Convert LibreOffice Spreadsheets (*.ods) into Markdown tables
 * app-text/papis                       - [0.14.1]           -- A powerful and highly extensible CLI document and bibliography manager
 * app-text/urlscan                     - [1.0.8]            -- Mutt and terminal url selector (similar to urlview)
 * app-text/zaread                      - [1.5.0-r1 & 9999]  -- A (very) lightweight MS Office files reader
