@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		Convert LibreOffice Calc Spreadsheets (*.ods) into Markdown tables.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/kennytm/ods2md/issues</bugs-to>
+		<remote-id type="github">kennytm/ods2md</remote-id>
+	</upstream>
+</pkgmetadata>
