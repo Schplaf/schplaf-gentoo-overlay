@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>slash@schplaf.org</email>
+		<name>slash</name>
+	</maintainer>
+	<longdescription>
+
+		Minimal and neofetch-like weather CLI with multiple data providers support, 
+		ASCI-icons, ANSI colors, localization and various output modes.
+		
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/Tairesh/rustormy/issues</bugs-to>
+		<changelog>https://github.com/Tairesh/rustormy/blob/main/CHANGELOG.md</changelog>
+		<remote-id type="github">Tairesh/rustormy<remote-id>
+	</upstream>
+</pkgmetadata>

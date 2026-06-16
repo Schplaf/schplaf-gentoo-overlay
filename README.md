@@ -11,7 +11,7 @@ Package list:
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
 * app-misc/mechsim                     - [1.1.0]            -- A CLI-Based Mechanical Keyboard Sound Simulator
 * app-misc/nn                          - [9999]             -- A minimalist Bash script to manage your notes
-* app-misc/rustormy                    - [0.4.1]            -- Minimal neofetch-like weather CLI
+* app-misc/rustormy                    - [0.5.1]            -- Minimal neofetch-like weather CLI
 * app-shells/sentaku                   - [0.8.1]            -- Utility to make sentaku (selection, 選択(sentaku)) window with shell command
 * app-text/baca                        - [0.1.17-r5]        -- A TUI Ebook Reader
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
