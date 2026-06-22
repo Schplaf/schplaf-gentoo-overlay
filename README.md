@@ -61,7 +61,7 @@ Package list:
 * dev-vcs/vcstool                      - [0.3.0-r1]         -- Tool designed to make working with multiple repositories easier
 * games-strategy/unciv-bin             - [4.20.15]          -- Civ V remake for Android & Desktop
 * media-fonts/square                   - [1.0]              -- A TTF font designed to make characters fill a square space
-* media-gfx/imgcat                     - [1.0.22]           -- Display images and gifs in your terminal
+* media-gfx/imgcat                     - [1.0.23]           -- Display images and gifs in your terminal
 * media-libs/libtxc_dxtn               - [1.0.1]            -- Implementation of the S3 Texture Compression
 * media-sound/castero                  - [0.9.5-r1]         -- TUI podcast client for the terminal
 * net-dns/owns                         - [0.8.1]            -- A personal DNS server designed to solve problems associated with VPN use
