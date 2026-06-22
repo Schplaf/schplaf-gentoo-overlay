@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		Display images and gifs in your terminal emulator.
+
+		Requirements: Your terminal emulator must be support true color and use a 
+		monospaced font that includes the lower half block unicode character (▄ U+2584).
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/danielgatis/imgcat/issues</bugs-to>
+		<remote-id type="github">danielgatis/imgcat</remote-id>
+	</upstream>
+</pkgmetadata>
