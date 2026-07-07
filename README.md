@@ -11,7 +11,7 @@ Package list:
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
 * app-misc/mechsim                     - [1.1.0]            -- A CLI-Based Mechanical Keyboard Sound Simulator
 * app-misc/nn                          - [9999]             -- A minimalist Bash script to manage your notes
-* app-misc/rustormy                    - [0.5.1]            -- Minimal neofetch-like weather CLI
+* app-misc/rustormy                    - [0.5.2]            -- Minimal neofetch-like weather CLI
 * app-shells/sentaku                   - [0.8.1]            -- Utility to make sentaku (selection, 選択(sentaku)) window with shell command
 * app-text/baca                        - [0.1.17-r5]        -- A TUI Ebook Reader
 * app-text/colorpedia                  - [1.2.3-r5]         -- Command-line tool for looking up colors, shades and palettes
@@ -49,7 +49,7 @@ Package list:
 * dev-python/pyexcel-ezodf             - [0.3.4-r4]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree                  - [1.4.3-r1]         -- Fast kd-tree implementation with OpenMP-enabled queries
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
-* dev-python/python-markdownify        - [1.2.2]            -- Library to convert HTML to Markdown
+* dev-python/python-markdownify        - [1.2.2-r1]         -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/standard-mailcap          - [3.13.0]           -- Standard library mailcap redistribution. "dead battery".(removed in Python-3.13)
 * dev-python/textual                   - [8.2.7]            -- Python framework to build sophisticated UI
