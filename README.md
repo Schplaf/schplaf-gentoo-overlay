@@ -44,6 +44,7 @@ Package list:
 * dev-python/kitchen                   - [1.2.6-r3]         -- Useful snippets of code that everybody ends up writing for their projects
 * dev-python/papis-python-rofi         - [1.0.2-r1]         -- Python module to create simple GUIs with Rofi (fork for papis)
 * dev-python/papis-rofi                - [0.2.0-r2]         -- Papis GUI using Rofi
+* dev-python/pipcl                     - [12]               -- Python packaging operations tool used by ArtifexSoftware projects
 * dev-python/playwright-python         - [1.60.0]           -- Library to automate Chromium, Firefox and WebKit browsers with a single API
 * dev-python/pyee                      - [13.0.0]           -- A rough port of Node.js's EventEmitter to Python with a few tricks of its own
 * dev-python/pyexcel-ezodf             - [0.3.4-r4]         -- Library to manipulate OpenDocument files (pyexcel version)

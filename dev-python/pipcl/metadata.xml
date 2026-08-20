@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		pipcl is Python library used by Artifex projects (MuPDF, PyMuPDF) for packaging.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/ArtifexSoftware/pipcl/issues</bugs-to>
+		<doc>https://github.com/ArtifexSoftware/pipcl/blob/main/README.rst</doc>
+		<remote-id type="github">ArtifexSoftware/pipcl</remote-id>
+		<remote-id type="pypi">pipcl</remote-id>
+	</upstream>
+</pkgmetadata>
