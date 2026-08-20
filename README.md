@@ -49,6 +49,7 @@ Package list:
 * dev-python/pyee                      - [13.0.0]           -- A rough port of Node.js's EventEmitter to Python with a few tricks of its own
 * dev-python/pyexcel-ezodf             - [0.3.4-r4]         -- Library to manipulate OpenDocument files (pyexcel version)
 * dev-python/pykdtree                  - [1.4.3-r1]         -- Fast kd-tree implementation with OpenMP-enabled queries
+* dev-python/pymupdf-fonts             - [1.0.4]            -- Collection of optional fonts for PyMuPDF
 * dev-python/python-doi                - [0.2-r1]           -- Python package to work with Document Object Identifier (doi)
 * dev-python/python-markdownify        - [1.2.2-r1]         -- Library to convert HTML to Markdown
 * dev-python/standard-imghdr           - [3.13.0]           -- Standard library imghdr redistribution. "dead battery".(removed in Python-3.13)

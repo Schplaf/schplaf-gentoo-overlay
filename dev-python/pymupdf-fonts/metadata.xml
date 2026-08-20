@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		pymupdf-fonts is a collection of fonts that can be used by PyMuPDF applications for writing text to PDFs.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/pymupdf/pymupdf-fonts/issues</bugs-to>
+		<doc>https://pymupdf.readthedocs.io/en/latest/font.html</doc>
+		<remote-id type="github">pymupdf/pymupdf-fonts</remote-id>
+		<remote-id type="pypi">pymupdf-fonts</remote-id>
+	</upstream>
+</pkgmetadata>
