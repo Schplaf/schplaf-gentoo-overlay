@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		This is a library to convert Rich Text Format (RTF) files to plain text files. 
+		A lot of medical documents are written in RTF format which is not ideal for parsing and further processing. 
+		This library converts it to plain old text.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/joshy/striprtf/issues</bugs-to>
+		<changelog>https://github.com/joshy/striprtf/blob/master/CHANGELOG.md</changelog>
+		<doc>https://github.com/joshy/striprtf/blob/master/README.md</doc>
+		<remote-id type="github">joshy/striprtf</remote-id>
+		<remote-id type="pypi">striprtf</remote-id>
+	</upstream>
+</pkgmetadata>
