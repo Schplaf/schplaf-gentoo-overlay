@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/rany2/edge-tts/issues</bugs-to>
+		<doc>https://github.com/rany2/edge-tts/blob/master/README.md</doc>
+		<remote-id type="github">rany2/edge-tts</remote-id>
+		<remote-id type="pypi">edge-tts</remote-id>
+	</upstream>
+</pkgmetadata>
