@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+        Lue is a versatile terminal eBook and document reader that is designed
+        to seamlessly blend reading and listening. Built with multi-format
+        support and modular multi-lingual text-to-speech integration, it
+        provides synchronized word highlighting, smooth auto-scrolling,
+        chapter navigation and persistent progress tracking to keep your
+        reading workflow simple and streamlined.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/paulilaaso/lue/issues</bugs-to>
+		<doc>https://github.com/paulilaaso/lue/blob/main/README.md/<doc>
+		<remote-id type="github">paulilaaso/lue</remote-id>
+		<remote-id type="pypi">lue-reader</remote-id>
+	</upstream>
+</pkgmetadata>
