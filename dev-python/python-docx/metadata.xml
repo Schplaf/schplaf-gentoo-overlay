@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		python-docx is a Python library for reading, creating, and updating Microsoft Word 2007+ (.docx) files.
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/python-openxml/python-docx/issues</bugs-to>
+		<changelog>https://github.com/python-openxml/python-docx/blob/master/HISTORY.rst</changelog>
+		<doc>https://python-docx.readthedocs.org/en/latest/</doc>
+		<remote-id type="github">python-openxml/python-docx</remote-id>
+		<remote-id type="pypi">python-docx</remote-id>
+	</upstream>
+</pkgmetadata>
