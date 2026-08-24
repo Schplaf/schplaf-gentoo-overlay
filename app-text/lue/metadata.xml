@@ -14,6 +14,9 @@
         reading workflow simple and streamlined.
 
 	</longdescription>
+	<use>
+		<flag name="kokoro">enable Kokoro TTS suppoort</flag>
+	</use>
 	<upstream>
 		<bugs-to>https://github.com/paulilaaso/lue/issues</bugs-to>
 		<doc>https://github.com/paulilaaso/lue/blob/main/README.md/<doc>
