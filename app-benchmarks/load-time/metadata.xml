@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		THis library aims to mesure the time it takes to load a shared library.
+		It is only useful for benchmarking, but that's already something!
+
+	</longdescription>
+	<upstream>
+		<bugs-to>https://github.com/serge-sans-paille/load-time/issues</bugs-to>
+		<doc>https://github.com/serge-sans-paille/load-time/blob/master/README.rst</doc>
+		<remote-id type="github">serge-sans-paille/load-time</remote-id>
+	</upstream>
+</pkgmetadata>

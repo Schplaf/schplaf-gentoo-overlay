@@ -12,8 +12,6 @@ LICENSE="BSD-3-Clause"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND=""
-RDEPEND="${DEPEND}"
 BDEPEND="sys-devel/gcc"
 
 DOCS=( README.rst LICENSE )
@@ -23,7 +21,7 @@ src_prepare() {
 }
 
 src_compile() {
-	emake 
+	emake
 }
 
 src_install() {
