@@ -13,7 +13,9 @@ HOMEPAGE="
 	https://github.com/rany2/edge-tts/
 	https://pypi.org/project/edge-tts/
 "
-SRC_URI="ihttps://github.com/rany2/edge-tts/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+SRC_URI="https://github.com/rany2/edge-tts/archive/refs/tags/${PV}.tar.gz -> ${P}.gh.tar.gz"
+
+S=${WORKDIR}/${P}
 
 LICENSE="LGPL-3"
 SLOT="0"
