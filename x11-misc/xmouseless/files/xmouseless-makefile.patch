@@ -1,0 +1,43 @@
+--- a/Makefile	2025-06-09 08:47:49.000000000 +0200
++++ b/Makefile	2026-09-11 15:34:11.696153004 +0200
+@@ -1,26 +1,28 @@
+ # xmouseless
+ VERSION = 0.1.1
+-CC      = /usr/bin/gcc
+-CFLAGS  = -Wall -g
+-LDFLAGS = -lX11 -lXtst -lpthread
++CC ?= cc
++CFLAGS += -Wall -g
++LIBS += -lX11 -lXtst -lpthread
+ 
+-PREFIX = /usr/local
++PREFIX ?= /usr
++
++.PHONY: all clean install uninstall
+ 
+ SRC = xmouseless.c
+-BIN = xmouseless
++NAME ?= xmouseless
+ 
+-all: $(BIN)
++all: $(NAME)
+ 
+-$(BIN): $(SRC) config.h
+-	$(CC) $(CFLAGS) -o $(BIN) $(SRC) $(LDFLAGS)
++$(NAME): $(SRC) config.h
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $(NAME) $(SRC) $(LIBS)
+ 
+ clean:
+-	rm -f $(BIN)
++	rm -f $(NAME)
+ 
+ install: all
+ 	mkdir -p $(PREFIX)/bin
+-	cp -f $(BIN) $(PREFIX)/bin
+-	chmod 755 $(PREFIX)/bin/$(BIN)
++	cp -f $(NAME) $(PREFIX)/bin
++	chmod 755 $(PREFIX)/bin/$(NAME)
+ 
+ uninstall:
+-	rm -f $(PREFIX)/bin/$(BIN)
++	rm -f $(PREFIX)/bin/$(NAME)
