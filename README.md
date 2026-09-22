@@ -80,5 +80,5 @@ Package list:
 * net-p2p/bob-bin                      - [9999]             -- B·o·B, an universal & secure peer-to-peer file-transfer (binary version)
 * sys-auth/solo1                       - [0.1.1-r3]         -- CLI and Python library for SoloKeys Solo 1
 * x11-misc/find-cursor                 - [1.8]              -- Simple XLib program to highlight the cursor position
-* x11-misc/xmouseless                  - [9999]             -- A replacement for the physical mouse in Linux
+* x11-misc/xmouseless                  - [1.0.0 & 9999]     -- A replacement for the physical mouse in Linux
 * x11-plugins/purple-discord           - [9999]             -- A libpurple/Pidgin plugin for Discord
