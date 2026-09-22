@@ -1,7 +1,7 @@
 slash's personal overlay
 
 Package list:
-* app-benchmarks/load-time             - [9999]             -- Program that mesures the time it takes to load a shared library
+* app-benchmarks/load-time             - [1.0.0 & 9999]     -- Program that mesures the time it takes to load a shared library
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
 * app-i18n/deepl-cli                   - [2.2.0]            -- DeepL Translator CLI without API Key
 * app-misc/gocost                      - [1.5.0]            -- Simple TUI application to manage monthly expenses
