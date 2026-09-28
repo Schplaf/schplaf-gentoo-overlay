@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>jcb@schplaf.org</email>
+	</maintainer>
+	<longdescription>
+
+		Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.
+
+		iIt can be use to to discover markdown files, read documentation directly on the command line. 
+		Glow will find local markdown files in subdirectories or a local Git repository.
+
+	</longdescription>
+	<use>
+		<flag name="fish-completion">enable fish-completion</flag>
+	</use>
+	<upstream>
+		<bugs-to>https://github.com/charmbracelet/glow/issues</bugs-to>
+		<doc>https://github.com/charmbracelet/glow/blob/main/README.md</doc>
+		<remote-id type="github">charmbracelet/glow</remote-id>
+	</upstream>
+</pkgmetadata>
