@@ -5,7 +5,7 @@ Package list:
 * app-eselect/eselect-llvm             - [20220206]         -- Manage LLVM versions
 * app-i18n/deepl-cli                   - [2.2.0]            -- DeepL Translator CLI without API Key
 * app-misc/gocost                      - [1.5.0]            -- Simple TUI application to manage monthly expenses
-* app-misc/glow                        - [2.1.1]            -- Render markdown on the CLI
+* app-misc/glow                        - [3.0.0]            -- Render markdown on the CLI
 * app-misc/isbntools                   - [4.3.29]           -- app/framework for 'all things ISBN' including metadata, descriptions, covers...
 * app-misc/mdcat                       - [2.7.1]            -- cat for markdown: Show markdown documents in terminals
 * app-misc/mdr                         - [0.2.5]            -- A standalone Markdown renderer for the terminal
