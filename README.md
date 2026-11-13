@@ -77,6 +77,7 @@ Package list:
 * net-misc/reddit-tui                  - [0.3.9]            -- Terminal UI for reddit
 * net-misc/ytsurf                      - [3.1.7]            -- Simple shell script to search for YouTube videos from your terminal
 * net-misc/tuir                        - [1.29.0-r3]        -- A terminal user interface (TUI) for Reddit
+* net-news/eilmeldung                  - [1.10.1]           -- A TUI RSS Reader based on the news-flash library
 * net-p2p/bob-bin                      - [9999]             -- B·o·B, an universal & secure peer-to-peer file-transfer (binary version)
 * sys-auth/solo1                       - [0.1.1-r3]         -- CLI and Python library for SoloKeys Solo 1
 * x11-misc/find-cursor                 - [1.8]              -- Simple XLib program to highlight the cursor position
